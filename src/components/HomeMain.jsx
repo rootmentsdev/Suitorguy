@@ -109,7 +109,7 @@ const HomeMain = () => {
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                                    fontWeight: '900',
+                                    fontWeight: '910',
                                     letterSpacing: '0',
                                     color: '#3D3D3D',
                                     lineHeight: '1.05',
@@ -120,14 +120,14 @@ const HomeMain = () => {
                                 <span style={{ display: 'block', whiteSpace: 'nowrap', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY</span>
                             </motion.h1>
 
-                            {/* Blue Underline */}
+                            {/* Black Underline */}
                             <motion.div
                                 className="mt-6"
                                 variants={fadeInVariant}
                                 style={{
                                     width: '140px',
                                     height: '3px',
-                                    backgroundColor: '#0000FF',
+                                    backgroundColor: '#000000',
                                     marginTop: '15px',
                                 }}
                             ></motion.div>
