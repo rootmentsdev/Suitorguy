@@ -14,23 +14,25 @@ const HowWork = () => {
             <div className="text-left flex flex-col gap-6 lg:gap-8">
                 {/* Main H1 Heading - SEO Optimized */}
                 <h1 
-                    className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.05]"
+                    className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold"
                     style={{
-                        fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                        fontWeight: 900,
-                        letterSpacing: '0',
-                        color: '#FFFFFF'
+                        fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                        fontWeight: '820',
+                        letterSpacing: '1%',
+                        color: '#FFFFFF',
+                        lineHeight: '100%'
                     }}
                 >
                     THE SUITOR GUY EXPERIENCE
                 </h1>
                 <h1 
-                    className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15]"
+                    className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold"
                     style={{
-                        fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                        fontWeight: 900,
-                        letterSpacing: '0',
-                        color: '#0000FF'
+                        fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                        fontWeight: '820',
+                        letterSpacing: '1%',
+                        color: '#0000FF',
+                        lineHeight: '100%'
                     }}
                 >
                     HOW IT WORKS
@@ -50,8 +52,9 @@ const HowWork = () => {
                 <h2 
                     className="text-xl md:text-2xl mt-4"
                     style={{
-                        fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                        fontWeight: 700,
+                        fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                        fontWeight: '820',
+                        letterSpacing: '1%',
                         color: '#FFFFFF'
                     }}
                 >
@@ -84,9 +87,9 @@ const HowWork = () => {
                             <h3 
                                 className="uppercase text-base md:text-lg mb-2"
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                                    fontWeight: 900,
-                                    letterSpacing: '0',
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '820',
+                                    letterSpacing: '1%',
                                     color: '#0000FF'
                                 }}
                             >
@@ -116,9 +119,9 @@ const HowWork = () => {
                             <h3 
                                 className="uppercase text-base md:text-lg mb-2"
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                                    fontWeight: 900,
-                                    letterSpacing: '0',
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '820',
+                                    letterSpacing: '1%',
                                     color: '#0000FF'
                                 }}
                             >
@@ -148,9 +151,9 @@ const HowWork = () => {
                             <h3 
                                 className="uppercase text-base md:text-lg mb-2"
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                                    fontWeight: 900,
-                                    letterSpacing: '0',
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '820',
+                                    letterSpacing: '1%',
                                     color: '#0000FF'
                                 }}
                             >
