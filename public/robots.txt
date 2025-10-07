@@ -6,10 +6,40 @@ Allow: /
 Disallow: /wp-admin/
 Disallow: /admin/
 Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*utm_*
+Disallow: /*?*ref=*
+Disallow: /*?*fbclid=*
+
+# Allow specific bots with different rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Block AI crawlers if needed (optional)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
 
 # Sitemap Location
 Sitemap: https://suitorguy.com/sitemap.xml
 
-# Crawl-delay (optional - be nice to servers)
-Crawl-delay: 1
+# Host declaration for canonical URL
+Host: https://suitorguy.com
 

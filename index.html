@@ -132,10 +132,27 @@
   
   <!-- Preload Critical Resources -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Griffin&display=swap" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" as="style" />
   <link rel="preload" href="/src/assets/hero-image.png" as="image" />
+  <link rel="preload" href="/src/assets/Logo.png" as="image" />
   
-  <!-- Fonts -->
+  <!-- DNS Prefetch for Performance -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//maps.googleapis.com">
+  
+  <!-- Fonts with display=swap for better performance -->
   <link href="https://fonts.googleapis.com/css2?family=Griffin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Microsoft Clarity Analytics -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tmc6fulpab");
+  </script>
 </head>
 
 <body>

@@ -81,11 +81,12 @@ const HomeMain = () => {
                         <div className="relative z-20">
                             <img
                                 src={HeroImage}
-                                alt="Premium Wedding Suit on Mannequin with Blue Background"
+                                alt="Premium wedding suit rental in Kerala - Suitor Guy. Elegant groom suit with perfect fit for your special day"
                                 className="drop-shadow-2xl w-[380px] h-auto sm:w-[450px] lg:w-[530px] lg:h-[590px] -ml-6 sm:-ml-4 lg:-ml-8"
                                 style={{
                                     opacity: 1,
                                 }}
+                                loading="eager"
                             />
                         </div>
                     </motion.div>
