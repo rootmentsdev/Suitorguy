@@ -102,7 +102,7 @@ const HomeMain = () => {
                         {/* Main Heading - exact typography and layout */}
                         <div className="space-y-0 w-full">
                             <motion.h1
-                                className="uppercase mb-0 text-[24px] leading-tight sm:text-[26px] lg:text-[36px] lg:leading-[1.05] mobile-extra-bold"
+                                className="uppercase mb-0 text-[26px] leading-tight sm:text-[28px] lg:text-[38px] lg:leading-[1.05] mobile-bold"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
@@ -115,7 +115,7 @@ const HomeMain = () => {
                                 PREMIUM WEDDING SUIT
                             </motion.h1>
                             <motion.h1
-                                className="uppercase mb-0 text-[24px] leading-tight sm:text-[26px] lg:text-[36px] lg:leading-[1.15] mobile-extra-bold"
+                                className="uppercase mb-0 text-[26px] leading-tight sm:text-[28px] lg:text-[38px] lg:leading-[1.15] mobile-bold"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
@@ -128,7 +128,7 @@ const HomeMain = () => {
                                 RENTALS IN KERALA
                             </motion.h1>
                             <motion.div
-                                className="uppercase text-[24px] leading-tight sm:text-[26px] lg:text-[36px] lg:leading-[1.15] mobile-extra-bold"
+                                className="uppercase text-[26px] leading-tight sm:text-[28px] lg:text-[38px] lg:leading-[1.15] mobile-bold"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
