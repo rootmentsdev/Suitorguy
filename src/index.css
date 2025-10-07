@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Typography Styles */
+@layer base {
+  /* Helvetica Compressed fallback - exact match */
+  .font-helvetica-compressed {
+    font-family: 'Helvetica Neue', 'Arial Narrow', 'Arial', sans-serif;
+    font-weight: 500;
+    font-stretch: condensed;
+    letter-spacing: 0.01em;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Main heading styles - exact specifications */
+  h1 {
+    font-family: 'Helvetica Neue', 'Arial Narrow', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Body text styles - exact specifications */
+  body {
+    font-family: 'Cabin', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  
+  /* Cabin font for paragraphs */
+  p {
+    font-family: 'Cabin', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}
+

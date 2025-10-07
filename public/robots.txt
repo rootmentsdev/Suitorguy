@@ -1,0 +1,15 @@
+# Robots.txt for Suitor Guy - Premium Wedding Suit Rentals Kerala
+# https://suitorguy.com/
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap Location
+Sitemap: https://suitorguy.com/sitemap.xml
+
+# Crawl-delay (optional - be nice to servers)
+Crawl-delay: 1
+
