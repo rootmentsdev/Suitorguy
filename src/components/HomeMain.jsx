@@ -108,8 +108,8 @@ const HomeMain = () => {
                                 className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px]"
                                 variants={fadeInVariant}
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                                    fontWeight: 900,
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '900',
                                     letterSpacing: '0',
                                     color: '#3D3D3D',
                                     lineHeight: '1.05',
