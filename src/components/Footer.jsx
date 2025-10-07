@@ -35,11 +35,33 @@ const Footer = () => {
                         />
                     </div>
 
+                    {/* Business Contact Information */}
+                    <div className="mb-6 text-gray-300 text-center lg:text-left">
+                        <div className="flex items-center justify-center lg:justify-start mb-2">
+                            <FiPhone className="mr-2 text-blue-500" />
+                            <a href="tel:+917593838700" className="hover:text-white transition-colors">
+                                +91 7593838700
+                            </a>
+                        </div>
+                        <div className="flex items-center justify-center lg:justify-start mb-2">
+                            <GrLocation className="mr-2 text-blue-500" />
+                            <span>CTO Colony, Pappanamcode Signal, Thiruvananthapuram, Kerala 695018</span>
+                        </div>
+                        <div className="flex items-center justify-center lg:justify-start mb-4">
+                            <MdOutlineMail className="mr-2 text-blue-500" />
+                            <a href="mailto:info@suitorguy.com" className="hover:text-white transition-colors">
+                                info@suitorguy.com
+                            </a>
+                        </div>
+                    </div>
+
                     {/* Social Icons */}
                     <div className="flex justify-center lg:justify-start space-x-4">
-                        <div className="w-10 h-10 rounded-full flex justify-center items-center bg-blue-500 cursor-pointer">
-                            <FaFacebookF className="text-black text-xl hover:text-white transition-all duration-300" />
-                        </div>
+                        <a href="https://www.facebook.com/suitorguy" target="_blank" rel="noopener noreferrer">
+                            <div className="w-10 h-10 rounded-full flex justify-center items-center bg-blue-500 cursor-pointer">
+                                <FaFacebookF className="text-black text-xl hover:text-white transition-all duration-300" />
+                            </div>
+                        </a>
                         <a
                             href="https://wa.me/919946366655"
                             target="_blank"
@@ -50,12 +72,10 @@ const Footer = () => {
                             </div>
                         </a>
                         <a href="https://www.instagram.com/suitorguy_/" target="_blank" rel="noopener noreferrer">
-
                             <div className="w-10 h-10 rounded-full flex justify-center items-center bg-blue-500 cursor-pointer">
                                 <FaInstagram className="text-black text-xl hover:text-rose-500 transition-all duration-300" />
                             </div>
                         </a>
-
                     </div>
                 </div>
 

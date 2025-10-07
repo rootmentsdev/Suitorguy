@@ -1,36 +1,39 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Minify production build using esbuild (faster than terser)
-    minify: 'esbuild',
-    // Enable CSS code splitting
-    cssCodeSplit: true,
-    // Optimize chunk size
+    // Optimize bundle size
     rollupOptions: {
       output: {
-        // Manual chunk splitting for better caching
         manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'animation-vendor': ['framer-motion', 'aos', 'gsap'],
-          'ui-vendor': ['@headlessui/react', '@heroicons/react'],
-        },
-      },
+          vendor: ['react', 'react-dom'],
+          animations: ['framer-motion', 'gsap'],
+          ui: ['@headlessui/react', 'react-router-dom']
+        }
+      }
     },
-    // Set chunk size warning limit
-    chunkSizeWarningLimit: 1000,
-    // Enable source maps for better debugging (can disable in production)
-    sourcemap: false,
+    // Enable compression
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true
+      }
+    },
+    // Optimize assets
+    assetsInlineLimit: 4096,
+    // Enable source maps for debugging
+    sourcemap: false
+  },
+  server: {
+    // Enable compression in development
+    compression: true
   },
   // Optimize dependencies
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom', 'framer-motion', 'aos', 'gsap'],
-  },
-  // Server configuration for GZIP compression (in production, configure your hosting provider)
-  server: {
-    compress: true,
-  },
+    include: ['react', 'react-dom', 'framer-motion']
+  }
 })

@@ -87,60 +87,38 @@ const HomeMain = () => {
                                     opacity: 1,
                                 }}
                                 loading="eager"
+                                decoding="async"
+                                fetchpriority="high"
                             />
                         </div>
                     </motion.div>
 
                     {/* Right Content - Text Section */}
                     <motion.div
-                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-20 pt-4"
+                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-20"
                         initial="hidden"
                         animate="visible"
                         variants={slideInRight}
                         style={{ flex: '1 1 auto', maxWidth: '600px' }}
                         
                     >
-                        {/* Main Heading - exact typography and layout */}
+                        {/* Main Heading - SEO optimized with single H1 */}
                         <div className="space-y-0 w-full">
                             <motion.h1
-                                className="uppercase mb-0 text-[26px] leading-tight sm:text-[28px] lg:text-[38px] lg:leading-[1.05] mobile-bold"
+                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px]"
                                 variants={fadeInVariant}
                                 style={{
-                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                                    fontWeight: '820',
-                                    letterSpacing: '1%',
+                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
+                                    fontWeight: 900,
+                                    letterSpacing: '0',
                                     color: '#3D3D3D',
-                                    whiteSpace: 'nowrap',
+                                    lineHeight: '1.05',
                                 }}
                             >
-                                PREMIUM WEDDING SUIT
+                                <span style={{ display: 'block', whiteSpace: 'nowrap' }}>PREMIUM WEDDING SUIT</span>
+                                <span style={{ display: 'block', whiteSpace: 'nowrap', lineHeight: '1.15' }}>RENTALS ACROSS KERALA</span>
+                                <span style={{ display: 'block', whiteSpace: 'nowrap', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY</span>
                             </motion.h1>
-                            <motion.h1
-                                className="uppercase mb-0 text-[26px] leading-tight sm:text-[28px] lg:text-[38px] lg:leading-[1.15] mobile-bold"
-                                variants={fadeInVariant}
-                                style={{
-                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                                    fontWeight: '820',
-                                    letterSpacing: '1%',
-                                    color: '#3D3D3D',
-                                    whiteSpace: 'nowrap',
-                                }}
-                            >
-                                RENTALS IN KERALA
-                            </motion.h1>
-                            <motion.div
-                                className="uppercase text-[26px] leading-tight sm:text-[28px] lg:text-[38px] lg:leading-[1.15] mobile-bold"
-                                variants={fadeInVariant}
-                                style={{
-                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                                    fontWeight: '820',
-                                    letterSpacing: '1%',
-                                    color: '#0000FF',
-                                    whiteSpace: 'nowrap',
-                                }}
-                            >
-                                SUITOR GUY
-                            </motion.div>
 
                             {/* Blue Underline */}
                             <motion.div
@@ -155,7 +133,7 @@ const HomeMain = () => {
                             ></motion.div>
                         </div>
 
-                        {/* Description Text - exact styling */}
+                        {/* Description Text - SEO optimized with keywords */}
                         <motion.p
                             variants={fadeInVariant}
                             className="text-sm sm:text-base lg:text-[14px]"
@@ -169,11 +147,11 @@ const HomeMain = () => {
                                 marginTop: '15px',
                             }}
                         >
-                            Designed to make you look your best on the most important day of your life experience bespoke tailoring that fits your style and celebrates your love
+                            Experience premium wedding suit collections across Kerala with expert fitting services. Designed to make you look your best on the most important day of your life with bespoke tailoring that fits your style perfectly.
                         </motion.p>
 
                         {/* CTA Button */}
-                        <motion.div variants={fadeInVariant} className="pt-6 w-full lg:w-auto">
+                        <motion.div variants={fadeInVariant} className="pt-1 w-full lg:w-auto">
                             <button
                                 className="hover:bg-blue-700 transition-colors duration-300 w-full lg:w-auto"
                                 style={{

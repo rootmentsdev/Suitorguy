@@ -12,8 +12,8 @@ const HowWork = () => {
             }}
         >
             <div className="text-left flex flex-col gap-6 lg:gap-8">
-                {/* Main H1 Heading - SEO Optimized */}
-                <h1 
+                {/* Single H1 Heading - SEO Optimized */}
+                <h2 
                     className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold"
                     style={{
                         fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
@@ -23,20 +23,8 @@ const HowWork = () => {
                         lineHeight: '100%'
                     }}
                 >
-                    THE SUITOR GUY EXPERIENCE
-                </h1>
-                <h1 
-                    className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold"
-                    style={{
-                        fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                        fontWeight: '820',
-                        letterSpacing: '1%',
-                        color: '#0000FF',
-                        lineHeight: '100%'
-                    }}
-                >
-                    HOW IT WORKS
-                </h1>
+                    THE SUITOR GUY EXPERIENCE - HOW IT WORKS
+                </h2>
                 
                 {/* Blue Underline - Matching HomeMain.jsx */}
                 <div
@@ -48,8 +36,8 @@ const HowWork = () => {
                     }}
                 ></div>
 
-                {/* Subtitle */}
-                <h2 
+                {/* Subtitle - SEO optimized */}
+                <h3 
                     className="text-xl md:text-2xl mt-4"
                     style={{
                         fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
@@ -58,8 +46,8 @@ const HowWork = () => {
                         color: '#FFFFFF'
                     }}
                 >
-                    Simple 3-Step Process for Perfect Wedding Suit Rental
-                </h2>
+                    Simple 3-Step Process: Expert Fitting & Collection Starting from ₹4,999
+                </h3>
 
                 {/* Description */}
                 <p 
@@ -71,7 +59,7 @@ const HowWork = () => {
                         color: '#CCCCCC'
                     }}
                 >
-                    Experience our seamless wedding suit rental process designed to make you look your best on your special day. From selection to fitting to return, we handle everything with care.
+                    Experience our seamless wedding suit rental process across Kerala with professional fitting services. From selection to fitting to return, we handle everything with care.
                 </p>
 
                 {/* Steps */}

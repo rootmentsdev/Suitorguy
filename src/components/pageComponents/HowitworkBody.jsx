@@ -16,30 +16,21 @@ const HowitworkBody = () => {
     }, []);
     return (
         <div className='mb-10'>
-            {/* Page Header - SEO Optimized */}
+            {/* Page Header - Single SEO H1 */}
             <div className="flex flex-col gap-6 mb-12">
-                {/* Main H1 Heading - SEO */}
+                {/* Single H1 Heading - SEO Optimized */}
                 <h1 
-                    className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.05]"
+                    className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px]"
                     style={{
                         fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
                         fontWeight: 900,
                         letterSpacing: '0',
-                        color: '#3D3D3D'
+                        color: '#3D3D3D',
+                        lineHeight: '1.05'
                     }}
                 >
-                    HOW WEDDING SUIT RENTAL
-                </h1>
-                <h1 
-                    className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15]"
-                    style={{
-                        fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                        fontWeight: 900,
-                        letterSpacing: '0',
-                        color: '#0000FF'
-                    }}
-                >
-                    WORKS - SUITOR GUY
+                    <span style={{ display: 'block' }}>HOW WEDDING SUIT RENTAL</span>
+                    <span style={{ display: 'block', color: '#0000FF', lineHeight: '1.15' }}>WORKS - SUITOR GUY</span>
                 </h1>
                 
                 {/* Blue Underline */}
@@ -52,7 +43,7 @@ const HowitworkBody = () => {
                     }}
                 ></div>
 
-                {/* Subtitle */}
+                {/* Subtitle - SEO optimized */}
                 <h2 
                     className="text-xl md:text-2xl mt-4"
                     style={{
@@ -61,7 +52,7 @@ const HowitworkBody = () => {
                         color: '#3D3D3D'
                     }}
                 >
-                    Effortless Elegance in Three Simple Steps
+                    Effortless Elegance in Three Simple Steps Across Kerala
                 </h2>
 
                 {/* Description */}
@@ -74,7 +65,7 @@ const HowitworkBody = () => {
                         color: '#666666'
                     }}
                 >
-                    Visit our store and let us handle everything—from fit to finish. Experience the perfect suit, tailored to your occasion, without the hassle.
+                    Visit our store and let us handle everything—from professional fitting to perfect finish. Experience our premium collection starting from ₹4,999, tailored to your occasion, without the hassle.
                 </p>
 
                 <button 
