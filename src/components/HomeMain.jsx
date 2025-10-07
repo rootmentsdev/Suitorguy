@@ -102,12 +102,12 @@ const HomeMain = () => {
                         {/* Main Heading - exact typography and layout */}
                         <div className="space-y-0 w-full">
                             <motion.h1
-                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.05] mobile-extra-bold"
+                                className="uppercase mb-0 text-[24px] leading-tight sm:text-[26px] lg:text-[36px] lg:leading-[1.05] mobile-extra-bold"
                                 variants={fadeInVariant}
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                                    fontWeight: 900,
-                                    letterSpacing: '0',
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '820',
+                                    letterSpacing: '1%',
                                     color: '#3D3D3D',
                                     whiteSpace: 'nowrap',
                                 }}
@@ -115,12 +115,12 @@ const HomeMain = () => {
                                 PREMIUM WEDDING SUIT
                             </motion.h1>
                             <motion.h1
-                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15] mobile-extra-bold"
+                                className="uppercase mb-0 text-[24px] leading-tight sm:text-[26px] lg:text-[36px] lg:leading-[1.15] mobile-extra-bold"
                                 variants={fadeInVariant}
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                                    fontWeight: 900,
-                                    letterSpacing: '0',
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '820',
+                                    letterSpacing: '1%',
                                     color: '#3D3D3D',
                                     whiteSpace: 'nowrap',
                                 }}
@@ -128,12 +128,12 @@ const HomeMain = () => {
                                 RENTALS IN KERALA
                             </motion.h1>
                             <motion.div
-                                className="uppercase text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15] mobile-extra-bold"
+                                className="uppercase text-[24px] leading-tight sm:text-[26px] lg:text-[36px] lg:leading-[1.15] mobile-extra-bold"
                                 variants={fadeInVariant}
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                                    fontWeight: 900,
-                                    letterSpacing: '0',
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '820',
+                                    letterSpacing: '1%',
                                     color: '#0000FF',
                                     whiteSpace: 'nowrap',
                                 }}
