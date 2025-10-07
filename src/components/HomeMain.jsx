@@ -92,7 +92,7 @@ const HomeMain = () => {
 
                     {/* Right Content - Text Section */}
                     <motion.div
-                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-20"
+                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-20 pt-4"
                         initial="hidden"
                         animate="visible"
                         variants={slideInRight}
@@ -102,7 +102,7 @@ const HomeMain = () => {
                         {/* Main Heading - exact typography and layout */}
                         <div className="space-y-0 w-full">
                             <motion.h1
-                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.05]"
+                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.05] mobile-extra-bold"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
@@ -115,7 +115,7 @@ const HomeMain = () => {
                                 PREMIUM WEDDING SUIT
                             </motion.h1>
                             <motion.h1
-                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15]"
+                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15] mobile-extra-bold"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
@@ -128,7 +128,7 @@ const HomeMain = () => {
                                 RENTALS IN KERALA
                             </motion.h1>
                             <motion.div
-                                className="uppercase text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15]"
+                                className="uppercase text-[28px] leading-tight sm:text-[32px] lg:text-[42px] lg:leading-[1.15] mobile-extra-bold"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
@@ -165,13 +165,14 @@ const HomeMain = () => {
                                 lineHeight: '22px',
                                 letterSpacing: '0',
                                 color: '#666666',
+                                marginTop: '15px',
                             }}
                         >
                             Designed to make you look your best on the most important day of your life experience bespoke tailoring that fits your style and celebrates your love
                         </motion.p>
 
                         {/* CTA Button */}
-                        <motion.div variants={fadeInVariant} className="pt-1 w-full lg:w-auto">
+                        <motion.div variants={fadeInVariant} className="pt-6 w-full lg:w-auto">
                             <button
                                 className="hover:bg-blue-700 transition-colors duration-300 w-full lg:w-auto"
                                 style={{

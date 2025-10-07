@@ -15,7 +15,7 @@ const Home = () => {
                 <div className='w-full'>
                     <HomeMain />
                 </div>
-                <div className="md:mt-0 sm:mt-[-100px] tiny:mt-[100px] ">
+                <div className="md:mt-0 sm:mt-[-80px] tiny:mt-[20px] ">
                     <Legacy />
                 </div>
                 <div className="lg:-mx-32">

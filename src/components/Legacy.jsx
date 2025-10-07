@@ -21,9 +21,9 @@ const Legacy = () => {
     }, []);
 
     return (
-        <div className="py-16 w-full" ref={legacyRef} id="legacy">
+        <div className="pt-4 pb-16 w-full" ref={legacyRef} id="legacy">
             {/* Top Section - WHY RENT FROM SUITOR GUY */}
-            <div className="mb-16">
+            <div className="mb-4 ">
                 <div className="flex flex-col lg:flex-row items-center gap-12 px-8">
                     {/* Text Section - Left */}
                     <div className="flex-1" data-aos="fade-right">

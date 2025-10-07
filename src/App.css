@@ -103,3 +103,18 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Extra bold text for mobile screens */
+.mobile-extra-bold {
+    font-weight: 900;
+}
+
+@media (max-width: 1023px) {
+    .mobile-extra-bold {
+        -webkit-text-stroke: 0.3px currentColor;
+        text-shadow: 0.3px 0.3px 0 currentColor, 
+                     -0.3px -0.3px 0 currentColor, 
+                     0.3px -0.3px 0 currentColor, 
+                     -0.3px 0.3px 0 currentColor;
+    }
+}
