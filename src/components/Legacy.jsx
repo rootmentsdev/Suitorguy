@@ -45,7 +45,7 @@ const Legacy = () => {
                             fontFamily: 'Cabin',
                             fontWeight: 400,
                             fontStyle: 'normal',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             lineHeight: '24px',
                             letterSpacing: '0%',
                             textAlign: 'justify'
@@ -94,7 +94,7 @@ const Legacy = () => {
                             fontFamily: 'Cabin',
                             fontWeight: 400,
                             fontStyle: 'normal',
-                            fontSize: '16px',
+                            fontSize: '14px',
                             lineHeight: '24px',
                             letterSpacing: '0%',
                             textAlign: 'justify'
