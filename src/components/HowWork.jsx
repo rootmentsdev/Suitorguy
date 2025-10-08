@@ -20,7 +20,8 @@ const HowWork = () => {
                         fontWeight: '820',
                         letterSpacing: '1%',
                         color: '#FFFFFF',
-                        lineHeight: '100%'
+                        lineHeight: '100%',
+                        marginLeft:"25px"
                     }}
                 >
                     THE SUITOR GUY EXPERIENCE - HOW IT WORKS
@@ -33,6 +34,7 @@ const HowWork = () => {
                         height: '3px',
                         backgroundColor: '#0000FF',
                         marginTop: '15px',
+                         marginLeft:"25px"
                     }}
                 ></div>
 
@@ -43,7 +45,9 @@ const HowWork = () => {
                         fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                         fontWeight: '820',
                         letterSpacing: '1%',
-                        color: '#FFFFFF'
+                        color: '#FFFFFF',
+                         marginLeft:"25px"
+
                     }}
                 >
                     Simple 3-Step Process: Expert Fitting & Collection Starting from ₹4,999
@@ -56,7 +60,8 @@ const HowWork = () => {
                         fontFamily: 'Cabin, Arial, sans-serif',
                         fontWeight: 400,
                         lineHeight: '24px',
-                        color: '#CCCCCC'
+                        color: '#CCCCCC',
+                         marginLeft:"25px"
                     }}
                 >
                     Experience our seamless wedding suit rental process across Kerala with professional fitting services. From selection to fitting to return, we handle everything with care.

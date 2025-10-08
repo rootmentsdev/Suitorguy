@@ -116,7 +116,7 @@ const HomeMain = () => {
                                 }}
                             >
                                 <span style={{ display: 'block', whiteSpace: 'nowrap' }}>PREMIUM WEDDING SUIT</span>
-                                <span style={{ display: 'block', whiteSpace: 'nowrap', lineHeight: '1.15' }}>RENTALS ACROSS KERALA</span>
+                                <span style={{ display: 'block', whiteSpace: 'nowrap', lineHeight: '1.15' }}>RENTALS IN KERALA</span>
                                 <span style={{ display: 'block', whiteSpace: 'nowrap', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY</span>
                             </motion.h1>
 
@@ -145,9 +145,11 @@ const HomeMain = () => {
                                 letterSpacing: '0',
                                 color: '#666666',
                                 marginTop: '15px',
+                                fontSize: '14px',
+
                             }}
                         >
-                            Experience premium wedding suit collections across Kerala with expert fitting services. Designed to make you look your best on the most important day of your life with bespoke tailoring that fits your style perfectly.
+                            Designed to make you look your best on the most important day of your life  experience bespoke tailoring that fits your style and celebrates your love
                         </motion.p>
 
                         {/* CTA Button */}

@@ -16,10 +16,10 @@ const HowitworkBody = () => {
     }, []);
     return (
         <div className='mb-10'>
-            {/* Page Header - Single SEO H1 */}
+            {/* Page Header - Single SEO H2 */}
             <div className="flex flex-col gap-6 mb-12">
-                {/* Single H1 Heading - SEO Optimized */}
-                <h1 
+                {/* Single H2 Heading - SEO Optimized */}
+                <h2
                     className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px]"
                     style={{
                         fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
@@ -31,7 +31,7 @@ const HowitworkBody = () => {
                 >
                     <span style={{ display: 'block' }}>HOW WEDDING SUIT RENTAL</span>
                     <span style={{ display: 'block', color: '#0000FF', lineHeight: '1.15' }}>WORKS - SUITOR GUY</span>
-                </h1>
+                </h2>
                 
                 {/* Blue Underline */}
                 <div

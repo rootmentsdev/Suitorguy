@@ -120,10 +120,10 @@ const LocationsGrid = () => {
 
     return (
         <div className="w-full">
-            {/* Main Heading - Single SEO h1 */}
+            {/* Main Heading - Single SEO h2*/}
             <div className="max-w-7xl mx-auto mb-12">
                 <div className="mb-6">
-                    <h1 
+                    <h2
                         className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px]"
                         style={{
                             fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
@@ -135,7 +135,7 @@ const LocationsGrid = () => {
                     >
                         <span style={{ display: 'block' }}>FIND YOUR NEAREST</span>
                         <span style={{ display: 'block', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY STORE ACROSS KERALA</span>
-                    </h1>
+                    </h2>
                     
                     {/* Blue Underline */}
                     <div

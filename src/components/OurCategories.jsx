@@ -17,14 +17,13 @@ const OurCategories = () => {
     return (
         <div className="py-16 px-8" id="categories">
             {/* Heading */}
-            <div className="mb-12 max-w-7xl mx-auto">
-                <h2 className="text-2xl md:text-[35px]" style={{
+            <div className="mb-12 max-w-7xl mx-auto text-left">
+                <h2 className="text-2xl md:text-[35px] mt-12 md:ml-[-115px]" style={{
                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                     fontWeight: '820',
                     lineHeight: '100%',
                     letterSpacing: '1%',
-                    textTransform: 'uppercase',
-                    marginTop:"50px"
+                    textTransform: 'uppercase'
                 }}>
                     <span className="text-gray-800">OUR</span>
                     <br />

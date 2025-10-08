@@ -1,6 +1,7 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Contact from "../components/Contact"
+import ContactUs from "../components/ContactUs"
 
 const ContactPage = () => {
     return (
@@ -9,6 +10,10 @@ const ContactPage = () => {
             <div className='mt-[100px]'>
                 <div>
                     <Contact />
+                </div>
+                
+                <div className='-mx-5 md:-mx-32'>
+                    <ContactUs />
                 </div>
 
                 <div className='-mx-32'>

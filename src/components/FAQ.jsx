@@ -48,16 +48,14 @@ const FAQ = () => {
         <div className="py-16 px-8" id="faq">
             <div className="max-w-6xl mx-auto">
                 {/* Left side - Heading */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-32">
-                    <div className="lg:col-span-1" data-aos="fade-right">
-                        <h2 className="text-2xl md:text-[35px]" style={{
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-32">
+                    <div className="lg:col-span-1 text-left" data-aos="fade-right">
+                        <h2 className="text-2xl md:text-[35px] md:ml-[-165px]" style={{
                             fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                             fontWeight: '820',
                             lineHeight: '100%',
                             letterSpacing: '1%',
-                            textTransform: 'uppercase',
-                           
-                            
+                            textTransform: 'uppercase'
                         }}>
                             <span className="text-gray-800">FREQUENTLY ASKED</span>
                             <br />

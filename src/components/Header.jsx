@@ -174,7 +174,7 @@ const NavLinks = ({ location, setMobileMenuOpen, isMobile }) => {
             {/* About */}
             {location.pathname === "/" ? (
                 <ScrollLink
-                    to="legacy"
+                    to="about-us"
                     smooth={true}
                     duration={500}
                     onClick={() => handleClick("/about")}
@@ -185,8 +185,17 @@ const NavLinks = ({ location, setMobileMenuOpen, isMobile }) => {
                 </ScrollLink>
             ) : (
                 <RouterLink
-                    to="/about"
-                    onClick={() => handleClick("/about")}
+                    to="/"
+                    onClick={() => {
+                        handleClick("/about");
+                        // Scroll to about-us section after navigation
+                        setTimeout(() => {
+                            const aboutUsSection = document.getElementById('about-us');
+                            if (aboutUsSection) {
+                                aboutUsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        }, 300);
+                    }}
                     className={linkClass("/about")}
                     title="About Suitor Guy - Kerala's Premium Suit Rental Service"
                 >
