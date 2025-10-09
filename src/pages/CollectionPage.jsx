@@ -8,9 +8,7 @@ const CollectionPage = () => {
             <Header />
             <div className='mt-[100px]'>
                 <Collection />
-                <div className='-mx-32'>
-                    <Footer />
-                </div>
+                <Footer />
             </div>
         </div>
     )

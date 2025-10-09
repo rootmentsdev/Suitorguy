@@ -26,67 +26,9 @@ const Collection = () => {
 
     const filters = ['Classic', 'Luxury', 'Premium'];
 
-    const products = [
-        {
-            id: 1,
-            image: Coll1,
-            title: 'INDO WESTERN',
-            price: 'Starting from ₹4,999',
-            bgColor: 'bg-gray-200',
-            textColor: 'text-black'
-        },
-        {
-            id: 2,
-            image: Coll2,
-            title: 'INDO WESTERN',
-            price: 'Starting from ₹4,999',
-            bgColor: 'bg-gray-800',
-            textColor: 'text-white'
-        },
-        {
-            id: 3,
-            image: Coll3,
-            title: 'INDO WESTERN',
-            price: 'Starting from ₹4,999',
-            bgColor: 'bg-blue-900',
-            textColor: 'text-white'
-        },
-        {
-            id: 4,
-            image: Coll4,
-            title: 'INDO WESTERN',
-            price: 'Starting from ₹4,999',
-            bgColor: 'bg-gray-200',
-            textColor: 'text-black'
-        },
-        {
-            id: 5,
-            image: Coll5,
-            title: 'INDO WESTERN',
-            price: 'Starting from ₹4,999',
-            bgColor: 'bg-black',
-            textColor: 'text-white'
-        },
-        {
-            id: 6,
-            image: Coll6,
-            title: 'INDO WESTERN',
-            price: 'Starting from ₹4,999',
-            bgColor: 'bg-gray-800',
-            textColor: 'text-white'
-        },
-        {
-            id: 7,
-            image: Coll7,
-            title: 'INDO WESTERN',
-            price: 'Starting from ₹4,999',
-            bgColor: 'bg-gray-200',
-            textColor: 'text-black'
-        }
-    ];
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen" style={{ backgroundColor: '#EFEFEF' }}>
             {/* Header Section */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
                 <motion.div
@@ -98,12 +40,30 @@ const Collection = () => {
                 >
                     {/* Title */}
                     <div className="mb-6 sm:mb-8">
-                        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2">
+                        <h1 
+                            className="text-2xl sm:text-3xl lg:text-4xl mb-2"
+                            style={{
+                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                fontWeight: '910',
+                                letterSpacing: '0',
+                                color: '#3D3D3D',
+                                lineHeight: '1.05',
+                            }}
+                        >
                             FIND YOUR NEAREST
                         </h1>
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold" style={{ color: '#0033FF' }}>
+                        <h2 
+                            className="text-2xl sm:text-3xl lg:text-4xl"
+                            style={{
+                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                fontWeight: '910',
+                                letterSpacing: '0',
+                                color: '#0000FF',
+                                lineHeight: '1.05',
+                            }}
+                        >
                             SUITOR GUY
-                </h2>
+                        </h2>
                     </div>
 
                     {/* Filter Buttons */}
@@ -126,13 +86,13 @@ const Collection = () => {
                     </div>
                 </motion.div>
 
-                {/* Products Grid - Dynamic Layout from Image */}
+                {/* Desktop Layout */}
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
                     variants={fadeInVariant}
-                    className="space-y-3"
+                    className="hidden md:block space-y-3"
                 >
                     {/* Row 1: Large + Medium */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
@@ -140,31 +100,60 @@ const Collection = () => {
                         <motion.div
                             variants={fadeInVariant}
                             className="lg:col-span-2"
-                            style={{ marginLeft: '300px' }}
+                            style={{ marginLeft: '225px' }}
                         >
                             <div 
-                                className={`${products[0].bgColor} overflow-hidden shadow-lg relative`}
+                                className="bg-gray-200 overflow-hidden shadow-lg relative"
                                 style={{
-                                    width: '220px',
-                                    height: '308px',
+                                    width: '330px',
+                                    height: '455px',
                                     borderRadius: '14px'
                                 }}
                             >
                                 <div className="relative h-full">
                                     <img 
-                                        src={products[0].image} 
+                                        src={Coll1} 
                                         alt="Indo Western Collection - Suitor Guy"
                                         className="w-full h-full object-cover"
                                     />
                                     
                                     {/* Text Overlay */}
                                     <div className="absolute top-6 left-6">
-                                        <h3 className={`text-xl font-bold ${products[0].textColor} mb-2`}>
-                                            {products[0].title}
+                                        <h3 
+                                            className="uppercase mb-2"
+                                            style={{
+                                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                                fontWeight: '910',
+                                                fontSize: '18px',
+                                                letterSpacing: '0',
+                                                color: '#3D3D3D',
+                                                lineHeight: '1.05',
+                                            }}
+                                        >
+                                            INDO <br /> WESTERN
                                         </h3>
-                                        <p className={`text-base ${products[0].textColor} opacity-90`}>
-                                            {products[0].price}
+                                        <p 
+                                            style={{
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontWeight: 400,
+                                                fontSize: '12px',
+                                                lineHeight: '18px',
+                                                letterSpacing: '0',
+                                                color: '#666666',
+                                                marginBottom: '8px',
+                                            }}
+                                        >
+                                            Starting from ₹4,999
                                         </p>
+                                        {/* Black Underline */}
+                                        <div
+                                            style={{
+                                                width: '120px',
+                                                height: '2px',
+                                                backgroundColor: '#000000',
+                                                marginTop: '8px',
+                                            }}
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
@@ -174,31 +163,60 @@ const Collection = () => {
                         <motion.div
                             variants={fadeInVariant}
                             className="lg:col-span-1"
-                            style={{ marginLeft: '-290px' }}
+                            style={{ marginLeft: '-255px' }}
                         >
                             <div 
-                                className={`${products[1].bgColor} overflow-hidden shadow-lg relative`}
+                                className="bg-gray-800 overflow-hidden shadow-lg relative"
                                 style={{
-                                    width: '320px',
-                                    height: '149px',
+                                    width: '475px',
+                                    height: '220px',
                                     borderRadius: '14px'
                                 }}
                             >
                                 <div className="relative h-full">
                                     <img 
-                                        src={products[1].image} 
+                                        src={Coll2} 
                                         alt="Indo Western Collection - Suitor Guy"
                                         className="w-full h-full object-cover"
                                     />
                                     
                                     {/* Text Overlay */}
                                     <div className="absolute top-6 left-6">
-                                        <h3 className={`text-lg font-bold ${products[1].textColor} mb-1`}>
-                                            {products[1].title}
+                                        <h3 
+                                            className="uppercase mb-2"
+                                            style={{
+                                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                                fontWeight: '910',
+                                                fontSize: '16px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                lineHeight: '1.05',
+                                            }}
+                                        >
+                                            INDO <br /> WESTERN
                                         </h3>
-                                        <p className={`text-sm ${products[1].textColor} opacity-90`}>
-                                            {products[1].price}
+                                        <p 
+                                            style={{
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontWeight: 400,
+                                                fontSize: '11px',
+                                                lineHeight: '16px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                marginBottom: '6px',
+                                            }}
+                                        >
+                                            Starting from ₹4,999
                                         </p>
+                                        {/* Black Underline */}
+                                        <div
+                                            style={{
+                                                width: '100px',
+                                                height: '2px',
+                                                backgroundColor: '#FFFFFF',
+                                                marginTop: '6px',
+                                            }}
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
@@ -211,32 +229,61 @@ const Collection = () => {
                         <motion.div
                             variants={fadeInVariant}
                             className="md:col-span-1"
-                            style={{ marginLeft: '529px', marginTop: '-165px' }}
+                            style={{ marginLeft: '565px', marginTop: '-235px' }}
                         >
                             <div 
-                                className={`${products[2].bgColor} overflow-hidden shadow-lg relative`}
+                                className="bg-blue-900 overflow-hidden shadow-lg relative"
                                 style={{
-                                    width: '154px',
-                                    height: '149px',
+                                    width: '231px',
+                                    height: '223px',
                                     borderRadius: '14px'
                                 }}
                             >
                                 <div className="relative h-full">
                                     <img 
-                                        src={products[2].image} 
+                                        src={Coll3} 
                                         alt="Indo Western Collection - Suitor Guy"
                                         className="w-full h-full object-cover"
                                     />
                                     
                                     {/* Text Overlay */}
                                     <div className="absolute top-6 left-6">
-                                        <h3 className={`text-lg font-bold ${products[2].textColor} mb-1`}>
-                                            {products[2].title}
+                                        <h3 
+                                            className="uppercase mb-2"
+                                            style={{
+                                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                                fontWeight: '910',
+                                                fontSize: '14px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                lineHeight: '1.05',
+                                            }}
+                                        >
+                                            INDO <br /> WESTERN
                                         </h3>
-                                        <p className={`text-sm ${products[2].textColor} opacity-90`}>
-                                            {products[2].price}
-                </p>
-            </div>
+                                        <p 
+                                            style={{
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontWeight: 400,
+                                                fontSize: '10px',
+                                                lineHeight: '14px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                marginBottom: '4px',
+                                            }}
+                                        >
+                                            Starting from ₹4,999
+                                        </p>
+                                        {/* Black Underline */}
+                                        <div
+                                            style={{
+                                                width: '80px',
+                                                height: '2px',
+                                                backgroundColor: '#FFFFFF',
+                                                marginTop: '4px',
+                                            }}
+                                        ></div>
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>
@@ -245,36 +292,70 @@ const Collection = () => {
                         <motion.div
                             variants={fadeInVariant}
                             className="md:col-span-1"
-                            style={{ marginLeft: '80px', marginTop: '-165px' }}
+                            style={{ marginLeft: '195px', marginTop: '-235px' }}
                         >
                             <div 
-                                className={`${products[3].bgColor} overflow-hidden shadow-lg relative`}
+                                className="bg-gray-200 overflow-hidden shadow-lg relative"
                                 style={{
-                                    width: '154px',
-                                    height: '149px',
+                                    width: '231px',
+                                    height: '223px',
                                     borderRadius: '14px'
                                 }}
                             >
                                 <div className="relative h-full">
                                     <img 
-                                        src={products[3].image} 
+                                        src={Coll4} 
                                         alt="Indo Western Collection - Suitor Guy"
                                         className="w-full h-full object-cover"
                                     />
                                     
                                     {/* Text Overlay */}
-                                    <div className="absolute top-6 left-6">
-                                        <h3 className={`text-lg font-bold ${products[3].textColor} mb-1`}>
-                                            {products[3].title}
+                                    <div className="absolute top-8 left-8">
+                                        <h3 
+                                            className="uppercase mb-2"
+                                            style={{
+                                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                                fontWeight: '910',
+                                                fontSize: '14px',
+                                                letterSpacing: '0',
+                                                color: '#3D3D3D',
+                                                lineHeight: '1.05',
+                                               
+                                                marginLeft:"120px"
+                                            }}
+                                        >
+                                            3<br/> PIECE SUIT
                                         </h3>
-                                        <p className={`text-sm ${products[3].textColor} opacity-90`}>
-                                            {products[3].price}
+                                        <p 
+                                            style={{
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontWeight: 400,
+                                                fontSize: '10px',
+                                                lineHeight: '14px',
+                                                letterSpacing: '0',
+                                                color: '#666666',
+                                                marginBottom: '4px',
+                                               
+                                                marginLeft:"120px"
+                                            }}
+                                        >
+                                            Starting from ₹4,999
                                         </p>
+                                        {/* Black Underline */}
+                                        <div
+                                            style={{
+                                                width: '80px',
+                                                height: '2px',
+                                                backgroundColor: '#000000',
+                                                marginTop: '4px',
+                                                 marginLeft:"120px"
+                                            }}
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
-                    </div>
+            </div>
 
                     {/* Row 3: Medium + Medium */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -282,31 +363,60 @@ const Collection = () => {
                         <motion.div
                             variants={fadeInVariant}
                             className="md:col-span-1"
-                            style={{ marginLeft: '300px' , marginTop: '-14px' }}
+                            style={{ marginLeft: '228px' , marginTop: '-16px' }}
                         >
                             <div 
-                                className={`${products[4].bgColor} overflow-hidden shadow-lg relative`}
+                                className="bg-black overflow-hidden shadow-lg relative"
                                 style={{
-                                    width: '270px',
-                                    height: '149px',
+                                    width: '405px',
+                                    height: '223px',
                                     borderRadius: '14px'
                                 }}
                             >
                                 <div className="relative h-full">
                                     <img 
-                                        src={products[4].image} 
+                                        src={Coll5} 
                                         alt="Indo Western Collection - Suitor Guy"
                                         className="w-full h-full object-cover"
                                     />
                                     
                                     {/* Text Overlay */}
-                                    <div className="absolute top-6 left-6">
-                                        <h3 className={`text-lg font-bold ${products[4].textColor} mb-1`}>
-                                            {products[4].title}
+                                    <div className="absolute top-8 left-8">
+                                        <h3 
+                                            className="uppercase mb-2"
+                                            style={{
+                                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                                fontWeight: '910',
+                                                fontSize: '16px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                lineHeight: '1.05',
+                                            }}
+                                        >
+                                            INDO <br /> WESTERN
                                         </h3>
-                                        <p className={`text-sm ${products[4].textColor} opacity-90`}>
-                                            {products[4].price}
+                                        <p 
+                                            style={{
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontWeight: 400,
+                                                fontSize: '11px',
+                                                lineHeight: '16px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                marginBottom: '6px',
+                                            }}
+                                        >
+                                            Starting from ₹4,999
                                         </p>
+                                        {/* Black Underline */}
+                                        <div
+                                            style={{
+                                                width: '100px',
+                                                height: '2px',
+                                                backgroundColor: '#FFFFFF',
+                                                marginTop: '6px',
+                                            }}
+                                        ></div>
                                     </div>
                                 </div>
                         </div>
@@ -316,31 +426,63 @@ const Collection = () => {
                         <motion.div
                             variants={fadeInVariant}
                             className="md:col-span-1"
-                            style={{ marginLeft: '-35px', marginTop: '-14px' }}
+                            style={{ marginLeft: '28px', marginTop: '-16px' }}
                         >
                             <div 
-                                className={`${products[5].bgColor} overflow-hidden shadow-lg relative`}
+                                className="bg-gray-800 overflow-hidden shadow-lg relative"
                                 style={{
-                                    width: '270px',
-                                    height: '149px',
+                                    width: '400px',
+                                    height: '223px',
                                     borderRadius: '14px'
                                 }}
                             >
                                 <div className="relative h-full">
                                     <img 
-                                        src={products[5].image} 
+                                        src={Coll6} 
                                         alt="Indo Western Collection - Suitor Guy"
                                         className="w-full h-full object-cover"
                                     />
                                     
                                     {/* Text Overlay */}
                                     <div className="absolute top-6 left-6">
-                                        <h3 className={`text-lg font-bold ${products[5].textColor} mb-1`}>
-                                            {products[5].title}
+                                        <h3 
+                                            className="uppercase mb-2"
+                                            style={{
+                                                fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                                fontWeight: '910',
+                                                fontSize: '20px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                lineHeight: '1.05',
+                                                marginLeft:"170px"
+                                            }}
+                                        >
+                                            BANDHGALA
                                         </h3>
-                                        <p className={`text-sm ${products[5].textColor} opacity-90`}>
-                                            {products[5].price}
+                                        <p 
+                                            style={{
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontWeight: 400,
+                                                fontSize: '14px',
+                                                lineHeight: '20px',
+                                                letterSpacing: '0',
+                                                color: '#FFFFFF',
+                                                marginBottom: '6px',
+                                                 marginLeft:"170px"
+                                            }}
+                                        >
+                                            Starting from ₹4,999
                                         </p>
+                                        {/* Black Underline */}
+                                        <div
+                                            style={{
+                                                width: '100px',
+                                                height: '2px',
+                                                backgroundColor: '#FFFFFF',
+                                                marginTop: '6px',
+                                                 marginLeft:"170px"
+                                            }}
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
@@ -348,41 +490,144 @@ const Collection = () => {
                     </div>
 
                     {/* Row 4: Single Card */}
-                    <div className="grid grid-cols-1">
-                        <motion.div
-                            variants={fadeInVariant}
-                            className="mx-auto"
-                            style={{ marginLeft: '300px' }}
-                        >
-                            <div 
-                                className={`${products[6].bgColor} overflow-hidden shadow-lg relative`}
-                                style={{
-                                    width: '550px',
-                                    height: '78px',
-                                    borderRadius: '14px',
-                                    opacity: 1
-                                }}
-                            >
-                                <div className="relative h-full">
-                                    <img 
-                                        src={products[6].image} 
-                                        alt="Indo Western Collection - Suitor Guy"
-                                        className="w-full h-full object-cover"
-                                    />
-                                    
-                                    {/* Text Overlay */}
-                                    <div className="absolute top-6 left-6">
-                                        <h3 className={`text-lg font-bold ${products[6].textColor} mb-1`}>
-                                            {products[6].title}
-                                        </h3>
-                                        <p className={`text-sm ${products[6].textColor} opacity-90`}>
-                                            {products[6].price}
-                            </p>
+                    
+                </motion.div>
+
+                {/* Mobile Layout - Modern Card Design */}
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={fadeInVariant}
+                    className="md:hidden space-y-6"
+                >
+                    {/* Coll1 */}
+                    <motion.div
+                        variants={fadeInVariant}
+                        className="relative rounded-2xl overflow-hidden shadow-lg"
+                        style={{ height: '280px' }}
+                    >
+                        <img 
+                            src={Coll1} 
+                            alt="Indo Western Collection - Suitor Guy"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
+                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
+                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                                View Collection
+                            </button>
                         </div>
-                                </div>
-                            </div>
-                        </motion.div>
+                    </motion.div>
+
+                    {/* Coll2 */}
+                    <motion.div
+                        variants={fadeInVariant}
+                        className="relative rounded-2xl overflow-hidden shadow-lg"
+                        style={{ height: '280px' }}
+                    >
+                        <img 
+                            src={Coll2} 
+                            alt="Indo Western Collection - Suitor Guy"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
+                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
+                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                                View Collection
+                            </button>
+                        </div>
+                    </motion.div>
+
+                    {/* Coll3 */}
+                    <motion.div
+                        variants={fadeInVariant}
+                        className="relative rounded-2xl overflow-hidden shadow-lg"
+                        style={{ height: '280px' }}
+                    >
+                        <img 
+                            src={Coll3} 
+                            alt="Indo Western Collection - Suitor Guy"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
+                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
+                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                                View Collection
+                            </button>
+                        </div>
+                    </motion.div>
+
+                    {/* Coll4 */}
+                    <motion.div
+                        variants={fadeInVariant}
+                        className="relative rounded-2xl overflow-hidden shadow-lg"
+                        style={{ height: '280px' }}
+                    >
+                        <img 
+                            src={Coll4} 
+                            alt="Indo Western Collection - Suitor Guy"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
+                        <div className="absolute bottom-6 right-6">
+                            <h3 className="text-xl font-black text-white mb-2">3 PIECE SUIT</h3>
+                            <p className="text-sm font-semibold text-white/90 mb-4">Starting from ₹4,999</p>
+                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                                View Collection
+                            </button>
+                        </div>
+                    </motion.div>
+
+                    {/* Coll5 */}
+                    <motion.div
+                        variants={fadeInVariant}
+                        className="relative rounded-2xl overflow-hidden shadow-lg"
+                        style={{ height: '280px' }}
+                    >
+                        <img 
+                            src={Coll5} 
+                            alt="Indo Western Collection - Suitor Guy"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
+                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
+                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                                View Collection
+                            </button>
+                        </div>
+                    </motion.div>
+
+                    {/* Coll6 */}
+                    <motion.div
+                        variants={fadeInVariant}
+                        className="relative rounded-2xl overflow-hidden shadow-lg"
+                        style={{ height: '280px' }}
+                    >
+                        <img 
+                            src={Coll6} 
+                            alt="Indo Western Collection - Suitor Guy"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
+                        <div className="absolute bottom-6 right-6">
+                            <h3 className="text-xl font-black text-white mb-2">BANDHGALA</h3>
+                            <p className="text-sm font-semibold text-white/90 mb-4">Starting from ₹4,999</p>
+                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                                View Collection
+                            </button>
                     </div>
+                    </motion.div>
+
+                   
                 </motion.div>
             </div>
         </div>

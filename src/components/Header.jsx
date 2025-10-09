@@ -256,27 +256,14 @@ const NavLinks = ({ location, setMobileMenuOpen, isMobile }) => {
             )}
 
             {/* Collections */}
-            {location.pathname === "/" ? (
-                <ScrollLink
-                    to="collection"
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleClick("/collection")}
-                    className={linkClass("/collection")}
-                    title="Wedding Suit Collections in Kerala - Classic, Premium & Luxury"
-                >
-                    Collections
-                </ScrollLink>
-            ) : (
-                <RouterLink
-                    to="/collection"
-                    onClick={() => handleClick("/collection")}
-                    className={linkClass("/collection")}
-                    title="Wedding Suit Collections in Kerala - Classic, Premium & Luxury"
-                >
-                    Collections
-                </RouterLink>
-            )}
+            <RouterLink
+                to="/collection"
+                onClick={() => handleClick("/collection")}
+                className={linkClass("/collection")}
+                title="Wedding Suit Collections in Kerala - Classic, Premium & Luxury"
+            >
+                Collections
+            </RouterLink>
 
             {/* How it Works? */}
             {location.pathname === "/" ? (
