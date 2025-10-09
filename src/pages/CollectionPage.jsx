@@ -4,13 +4,10 @@ import Header from "../components/Header"
 
 const CollectionPage = () => {
     return (
-        <div className="text-white md:mx-32 mx-5 ">
+        <div className="bg-white">
             <Header />
             <div className='mt-[100px]'>
-                <div>
-                    <Collection />
-                </div>
-
+                <Collection />
                 <div className='-mx-32'>
                     <Footer />
                 </div>

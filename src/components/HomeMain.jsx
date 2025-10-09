@@ -88,7 +88,7 @@ const HomeMain = () => {
                                 }}
                                 loading="eager"
                                 decoding="async"
-                                fetchpriority="high"
+                                fetchPriority="high"
                             />
                         </div>
                     </motion.div>
