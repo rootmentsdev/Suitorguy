@@ -14,40 +14,37 @@ const HowWork = () => {
             <div className="text-left flex flex-col gap-6 lg:gap-8">
                 {/* Single H1 Heading - SEO Optimized */}
                 <h2 
-                    className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold"
+                    className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold md:ml-[65px]"
                     style={{
                         fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                         fontWeight: '820',
                         letterSpacing: '1%',
                         color: '#FFFFFF',
-                        lineHeight: '100%',
-                        marginLeft:"25px"
+                        lineHeight: '100%'
                     }}
                 >
-                    THE SUITOR GUY EXPERIENCE - HOW IT WORKS
+                    THE SUITOR GUY EXPERIENCE - <span style={{ color: '#0427B9' }}>HOW IT WORKS</span>
                 </h2>
                 
                 {/* Blue Underline - Matching HomeMain.jsx */}
                 <div
+                    className="md:ml-[65px]"
                     style={{
                         width: '140px',
                         height: '3px',
                         backgroundColor: '#0000FF',
-                        marginTop: '15px',
-                         marginLeft:"25px"
+                        marginTop: '15px'
                     }}
                 ></div>
 
                 {/* Subtitle - SEO optimized */}
                 <h3 
-                    className="text-xl md:text-2xl mt-4"
+                    className="text-xl md:text-2xl mt-4 md:ml-[65px]"
                     style={{
                         fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                         fontWeight: '820',
                         letterSpacing: '1%',
-                        color: '#FFFFFF',
-                         marginLeft:"25px"
-
+                        color: '#FFFFFF'
                     }}
                 >
                     Simple 3-Step Process: Expert Fitting & Collection Starting from ₹4,999
@@ -55,13 +52,12 @@ const HowWork = () => {
 
                 {/* Description */}
                 <p 
-                    className="text-sm md:text-base md:w-[600px]"
+                    className="text-sm md:text-base md:w-[600px] md:ml-[65px]"
                     style={{
                         fontFamily: 'Cabin, Arial, sans-serif',
                         fontWeight: 400,
                         lineHeight: '24px',
-                        color: '#CCCCCC',
-                         marginLeft:"25px"
+                        color: '#CCCCCC'
                     }}
                 >
                     Experience our seamless wedding suit rental process across Kerala with professional fitting services. From selection to fitting to return, we handle everything with care.

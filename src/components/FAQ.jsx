@@ -50,7 +50,7 @@ const FAQ = () => {
                 {/* Left side - Heading */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-32">
                     <div className="lg:col-span-1 text-left" data-aos="fade-right">
-                        <h2 className="text-2xl md:text-[35px] md:ml-[-165px]" style={{
+                        <h2 className="text-2xl md:text-[35px] md:ml-[-2px]" style={{
                             fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                             fontWeight: '820',
                             lineHeight: '100%',

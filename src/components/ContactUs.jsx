@@ -59,7 +59,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="w-full py-8 sm:py-12 lg:py-20 xl:py-24">
+        <div id="contact-us" className="w-full py-8 sm:py-12 lg:py-20 xl:py-24">
             <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
                 <motion.div
                     initial="hidden"
@@ -70,12 +70,12 @@ const ContactUs = () => {
                 >
                     {/* Main Contact Card */}
                     <div 
-                        className="bg-gray-900 shadow-2xl overflow-hidden flex flex-col lg:flex-row w-full max-w-[1200px] h-auto lg:h-[557px] p-8 sm:p-12 lg:p-[100px] border-4 border-gray-800"
+                        className="bg-gray-900 shadow-2xl overflow-hidden flex flex-col lg:flex-row w-full max-w-[1100px] h-auto lg:h-[450px] p-6 sm:p-8 lg:p-12 border-4 border-gray-800"
                         style={{ 
                             backgroundColor: '#000000',
                             justifyContent: 'space-between',
                             opacity: 1,
-                            borderRadius: '46px',
+                            borderRadius: '32px',
                             boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.1)'
                         }}
                     >
@@ -83,25 +83,25 @@ const ContactUs = () => {
                             <div className="lg:w-1/2 flex flex-col justify-center">
                                 <motion.div
                                     variants={fadeInVariant}
-                                    className="space-y-6"
+                                    className="space-y-5"
                                 >
                                     {/* Main Heading */}
                                     <div>
                                         <h2 
-                                            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold uppercase leading-tight text-white"
+                                            className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold uppercase leading-tight text-white"
                                             style={{
                                                 fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                                                fontWeight: '850',
+                                                fontWeight: '820',
                                                 letterSpacing: '0.02em',
                                             }}
                                         >
                                             LOOKING FOR THE PERFECT SUIT FOR YOUR
                                         </h2>
                                         <h2 
-                                            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold uppercase leading-tight mt-2"
+                                            className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold uppercase leading-tight mt-2"
                                             style={{
                                                 fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                                                fontWeight: '850',
+                                                fontWeight: '820',
                                                 letterSpacing: '0.02em',
                                                 color: '#0033FF'
                                             }}
@@ -111,7 +111,7 @@ const ContactUs = () => {
                                     </div>
 
                                     {/* Separator Line */}
-                                    <div className="w-16 h-0.5 bg-white"></div>
+                                    <div className="w-14 h-0.5 bg-white"></div>
 
                                     {/* Body Text */}
                                     <p 
@@ -131,7 +131,7 @@ const ContactUs = () => {
                                 <motion.form
                                     variants={fadeInVariant}
                                     onSubmit={handleSubmit}
-                                    className="space-y-6"
+                                    className="space-y-5"
                                 >
                                     {/* Full Name Field */}
                                     <div>
@@ -142,7 +142,7 @@ const ContactUs = () => {
                                             onChange={handleInputChange}
                                             placeholder="Full Name"
                                             required
-                                            className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
                                             style={{
                                                 backgroundColor: '#333333',
                                                 fontFamily: 'Cabin, Arial, sans-serif'
@@ -159,7 +159,7 @@ const ContactUs = () => {
                                             onChange={handleInputChange}
                                             placeholder="Email Address"
                                             required
-                                            className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
                                             style={{
                                                 backgroundColor: '#333333',
                                                 fontFamily: 'Cabin, Arial, sans-serif'
@@ -176,7 +176,7 @@ const ContactUs = () => {
                                             onChange={handleInputChange}
                                             placeholder="Phone Number"
                                             required
-                                            className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
                                             style={{
                                                 backgroundColor: '#333333',
                                                 fontFamily: 'Cabin, Arial, sans-serif'
@@ -191,9 +191,9 @@ const ContactUs = () => {
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             placeholder="Message"
-                                            rows={4}
+                                            rows={3}
                                             required
-                                            className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 resize-none"
+                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 resize-none"
                                             style={{
                                                 backgroundColor: '#333333',
                                                 fontFamily: 'Cabin, Arial, sans-serif'
@@ -208,7 +208,7 @@ const ContactUs = () => {
                                             disabled={isSubmitting}
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="w-full py-3 px-6 rounded-lg font-bold text-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="w-full py-2 px-4 rounded-lg font-bold text-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                                             style={{
                                                 backgroundColor: '#0033FF',
                                                 fontFamily: 'Cabin, Arial, sans-serif'

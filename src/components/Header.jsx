@@ -40,13 +40,33 @@ const Header = () => {
                 {/* Desktop Links */}
                 <div className="hidden lg:flex lg:gap-x-8 items-center">
                     <NavLinks location={location} setMobileMenuOpen={setMobileMenuOpen} isMobile={false} />
-                    <RouterLink
-                        to="/contact"
-                        className="bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors"
-                        title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
-                    >
-                        Contact Us
-                    </RouterLink>
+                    {location.pathname === "/" ? (
+                        <ScrollLink
+                            to="contact-us"
+                            smooth={true}
+                            duration={500}
+                            className="bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors cursor-pointer"
+                            title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
+                        >
+                            Contact Us
+                        </ScrollLink>
+                    ) : (
+                        <RouterLink
+                            to="/"
+                            onClick={() => {
+                                setTimeout(() => {
+                                    const contactSection = document.getElementById('contact-us');
+                                    if (contactSection) {
+                                        contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                    }
+                                }, 300);
+                            }}
+                            className="bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors"
+                            title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
+                        >
+                            Contact Us
+                        </RouterLink>
+                    )}
                 </div>
             </nav>
 
@@ -97,6 +117,38 @@ const Header = () => {
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-2 py-6">
                                         <NavLinks location={location} setMobileMenuOpen={setMobileMenuOpen} isMobile />
+                                        {/* Contact Us Button for Mobile */}
+                                        <div className="pt-4">
+                                            {location.pathname === "/" ? (
+                                                <ScrollLink
+                                                    to="contact-us"
+                                                    smooth={true}
+                                                    duration={500}
+                                                    onClick={() => setMobileMenuOpen(false)}
+                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center cursor-pointer"
+                                                    title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
+                                                >
+                                                    Contact Us
+                                                </ScrollLink>
+                                            ) : (
+                                                <RouterLink
+                                                    to="/"
+                                                    onClick={() => {
+                                                        setMobileMenuOpen(false);
+                                                        setTimeout(() => {
+                                                            const contactSection = document.getElementById('contact-us');
+                                                            if (contactSection) {
+                                                                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                            }
+                                                        }, 300);
+                                                    }}
+                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center"
+                                                    title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
+                                                >
+                                                    Contact Us
+                                                </RouterLink>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

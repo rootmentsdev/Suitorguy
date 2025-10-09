@@ -18,7 +18,7 @@ const OurCategories = () => {
         <div className="py-16 px-8" id="categories">
             {/* Heading */}
             <div className="mb-12 max-w-7xl mx-auto text-left">
-                <h2 className="text-2xl md:text-[35px] mt-12 md:ml-[-115px]" style={{
+                <h2 className="text-2xl md:text-[35px] mt-12 md:ml-[-2px]" style={{
                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                     fontWeight: '820',
                     lineHeight: '100%',

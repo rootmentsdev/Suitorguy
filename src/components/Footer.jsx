@@ -5,13 +5,35 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link as Links } from "react-router-dom";
+import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import Logo from "../assets/Logo.png";
 
 
 const Footer = () => {
     const [Information, setInformation] = useState(false)
     const [Link, setLink] = useState(false)
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    const handleScrollNavigation = (sectionId) => {
+        if (location.pathname === "/") {
+            // If on home page, just scroll
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        } else {
+            // Navigate to home then scroll
+            navigate("/");
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 300);
+        }
+    }
 
     return (
         <div className="w-full z-50 bg-black text-white py-10 px-6 sm:px-10 lg:px-32" style={{
@@ -24,7 +46,7 @@ const Footer = () => {
             <div className="container mx-auto flex flex-col lg:flex-row flex-wrap justify-between text-center lg:text-left">
 
                 {/* Logo and Contact Section */}
-                <div className="mb-6 tiny:mr-[100px]">
+                <div className="mb-6 tiny:mr-[40px] ml-6 lg:ml-10">
                     {/* Company Logo */}
                     <div className="mb-6 flex justify-center lg:justify-start">
                         <img 
@@ -39,18 +61,18 @@ const Footer = () => {
                     <div className="mb-6 text-gray-300 text-center lg:text-left">
                         <div className="flex items-center justify-center lg:justify-start mb-2">
                             <FiPhone className="mr-2 text-blue-500" />
-                            <a href="tel:+917593838700" className="hover:text-white transition-colors">
-                                +91 7593838700
+                            <a href="tel:+917902766667" className="hover:text-white transition-colors">
+                                +91 7902766667
                             </a>
                         </div>
                         <div className="flex items-center justify-center lg:justify-start mb-2">
                             <GrLocation className="mr-2 text-blue-500" />
-                            <span>CTO Colony, Pappanamcode Signal, Thiruvananthapuram, Kerala 695018</span>
+                            <span>Ernakulam , Kerala 695018</span>
                         </div>
                         <div className="flex items-center justify-center lg:justify-start mb-4">
                             <MdOutlineMail className="mr-2 text-blue-500" />
                             <a href="mailto:info@suitorguy.com" className="hover:text-white transition-colors">
-                                info@suitorguy.com
+                                groomsweddinghub@gmail.com
                             </a>
                         </div>
                     </div>
@@ -90,11 +112,37 @@ const Footer = () => {
                             letterSpacing: '0%'
                         }}>Information</h3>
                         <ul className="space-y-2 text-gray-300">
-                            <li><a href="#" className="hover:text-white">Location</a></li>
-                            <li><a href="#" className="hover:text-white">FAQ</a></li>
-                            <li><a href="#" className="hover:text-white">Privacy & Policy</a></li>
-                            <li><a href="#" className="hover:text-white">Terms & Condition</a></li>
-                            <li><a href="#" className="hover:text-white">Contact</a></li>
+                            <li>
+                                <RouterLink to="/Locations" className="hover:text-white transition-colors">
+                                    Locations
+                                </RouterLink>
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={() => handleScrollNavigation('faq')} 
+                                    className="hover:text-white transition-colors text-left"
+                                >
+                                    FAQ
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#" className="hover:text-white transition-colors">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="hover:text-white transition-colors">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={() => handleScrollNavigation('contact-us')} 
+                                    className="hover:text-white transition-colors text-left"
+                                >
+                                    Contact
+                                </button>
+                            </li>
                         </ul>
                     </div>
 
@@ -107,13 +155,40 @@ const Footer = () => {
                             letterSpacing: '0%'
                         }}>Links</h3>
                         <ul className="space-y-2 text-gray-300">
-                            <li>  <Links to={'/'} className="hover:text-white">Home</Links></li>
-
-                            <li>  <Links to={'/about'} className="hover:text-white">About Us</Links></li>
-                            <li>  <Links to={'/collection'} className="hover:text-white">Collections</Links></li>
-                            <li>  <Links to={'/why-rent'} className="hover:text-white">Why rent?</Links></li>
-                            <li>  <Links to={'/HowitWorks'} className="hover:text-white">How it works?</Links></li>
-
+                            <li>
+                                <RouterLink to="/" className="hover:text-white transition-colors">
+                                    Home
+                                </RouterLink>
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={() => handleScrollNavigation('about-us')} 
+                                    className="hover:text-white transition-colors text-left"
+                                >
+                                    About Us
+                                </button>
+                            </li>
+                            <li>
+                                <RouterLink to="/collection" className="hover:text-white transition-colors">
+                                    Collections
+                                </RouterLink>
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={() => handleScrollNavigation('legacy')} 
+                                    className="hover:text-white transition-colors text-left"
+                                >
+                                    Why Rent?
+                                </button>
+                            </li>
+                            <li>
+                                <button 
+                                    onClick={() => handleScrollNavigation('how-it-works')} 
+                                    className="hover:text-white transition-colors text-left"
+                                >
+                                    How it Works?
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -142,15 +217,81 @@ const Footer = () => {
                             Information ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
                         }`}>
                             <ul className="space-y-3 text-gray-300 text-left">
-                                <li><Links to="/Locations" className="hover:text-white">Locations</Links></li>
-                                <li><a href="#faq" className="hover:text-white">FAQs</a></li>
-                                <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-                                <li><a href="#" className="hover:text-white">Terms & Conditions</a></li>
-                                <li><Links to="/contact" className="hover:text-white">Contact</Links></li>
-                                <li><Links to="/about" className="hover:text-white">About Us</Links></li>
-                                <li><Links to="/collection" className="hover:text-white">Collections</Links></li>
-                                <li><Links to="/why-rent" className="hover:text-white">Why Rent</Links></li>
-                                <li><Links to="/HowitWorks" className="hover:text-white">How it Works</Links></li>
+                                <li>
+                                    <RouterLink to="/Locations" className="hover:text-white transition-colors">
+                                        Locations
+                                    </RouterLink>
+                                </li>
+                                <li>
+                                    <button 
+                                        onClick={() => {
+                                            setInformation(false);
+                                            handleScrollNavigation('faq');
+                                        }} 
+                                        className="hover:text-white transition-colors text-left"
+                                    >
+                                        FAQs
+                                    </button>
+                                </li>
+                                <li>
+                                    <a href="#" className="hover:text-white transition-colors">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="hover:text-white transition-colors">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <button 
+                                        onClick={() => {
+                                            setInformation(false);
+                                            handleScrollNavigation('contact-us');
+                                        }} 
+                                        className="hover:text-white transition-colors text-left"
+                                    >
+                                        Contact
+                                    </button>
+                                </li>
+                                <li>
+                                    <button 
+                                        onClick={() => {
+                                            setInformation(false);
+                                            handleScrollNavigation('about-us');
+                                        }} 
+                                        className="hover:text-white transition-colors text-left"
+                                    >
+                                        About Us
+                                    </button>
+                                </li>
+                                <li>
+                                    <RouterLink to="/collection" className="hover:text-white transition-colors">
+                                        Collections
+                                    </RouterLink>
+                                </li>
+                                <li>
+                                    <button 
+                                        onClick={() => {
+                                            setInformation(false);
+                                            handleScrollNavigation('legacy');
+                                        }} 
+                                        className="hover:text-white transition-colors text-left"
+                                    >
+                                        Why Rent
+                                    </button>
+                                </li>
+                                <li>
+                                    <button 
+                                        onClick={() => {
+                                            setInformation(false);
+                                            handleScrollNavigation('how-it-works');
+                                        }} 
+                                        className="hover:text-white transition-colors text-left"
+                                    >
+                                        How it Works
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -177,9 +318,36 @@ const Footer = () => {
                             Link ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
                         }`}>
                             <ul className="space-y-3 text-gray-300 text-left">
-                                <li><a href="#" className="hover:text-white">Whatsapp</a></li>
-                                <li><a href="#" className="hover:text-white">Facebook</a></li>
-                                <li><a href="#" className="hover:text-white">Instagram</a></li>
+                                <li>
+                                    <a 
+                                        href="https://wa.me/919946366655" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="hover:text-white transition-colors"
+                                    >
+                                        WhatsApp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                        href="https://www.facebook.com/suitorguy" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="hover:text-white transition-colors"
+                                    >
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                        href="https://www.instagram.com/suitorguy_/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="hover:text-white transition-colors"
+                                    >
+                                        Instagram
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
