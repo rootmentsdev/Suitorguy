@@ -38,11 +38,21 @@ const ContactUs = () => {
         setSubmitStatus(null);
 
         try {
-            // Simulate form submission
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            // Google Apps Script Web App URL - Replace with your deployed URL
+            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbybYZ6Ps3TFpnKNeXOnWREXck2Jb07slS_h8CFdvPLs20Rl5qdEI52oi_jEc87O6s4wTg/exec';
             
-            // Here you would typically send the data to your backend
-            console.log('Form submitted:', formData);
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Required for Google Apps Script
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+            
+            // Since we're using no-cors mode, we can't read the response
+            // But we can assume success if no error is thrown
+            console.log('Form submitted to Google Sheets:', formData);
             
             setSubmitStatus('success');
             setFormData({
@@ -52,6 +62,7 @@ const ContactUs = () => {
                 message: ''
             });
         } catch (error) {
+            console.error('Error submitting form:', error);
             setSubmitStatus('error');
         } finally {
             setIsSubmitting(false);
