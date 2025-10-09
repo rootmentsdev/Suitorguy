@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import WhyRentPage from "./pages/WhyRentPage";
 import CollectionPage from "./pages/CollectionPage";
 import About from "./pages/About";
+import BreadcrumbSchema from "./components/BreadcrumbSchema";
 gsap.registerPlugin(ScrollToPlugin);
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
         <Loader setLoading={setLoading} />
       ) : (
         <>
-
+          <BreadcrumbSchema />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/HowitWorks" element={<HowitWorks />} />

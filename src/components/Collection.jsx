@@ -113,7 +113,7 @@ const Collection = () => {
                                 <div className="relative h-full">
                                     <img 
                                         src={Coll1} 
-                                        alt="Indo Western Collection - Suitor Guy"
+                                        alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                                         className="w-full h-full object-cover"
                                     />
                                     
@@ -176,7 +176,7 @@ const Collection = () => {
                                 <div className="relative h-full">
                                     <img 
                                         src={Coll2} 
-                                        alt="Indo Western Collection - Suitor Guy"
+                                        alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                                         className="w-full h-full object-cover"
                                     />
                                     
@@ -242,7 +242,7 @@ const Collection = () => {
                                 <div className="relative h-full">
                                     <img 
                                         src={Coll3} 
-                                        alt="Indo Western Collection - Suitor Guy"
+                                        alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                                         className="w-full h-full object-cover"
                                     />
                                     
@@ -305,7 +305,7 @@ const Collection = () => {
                                 <div className="relative h-full">
                                     <img 
                                         src={Coll4} 
-                                        alt="Indo Western Collection - Suitor Guy"
+                                        alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                                         className="w-full h-full object-cover"
                                     />
                                     
@@ -376,7 +376,7 @@ const Collection = () => {
                                 <div className="relative h-full">
                                     <img 
                                         src={Coll5} 
-                                        alt="Indo Western Collection - Suitor Guy"
+                                        alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                                         className="w-full h-full object-cover"
                                     />
                                     
@@ -439,7 +439,7 @@ const Collection = () => {
                                 <div className="relative h-full">
                                     <img 
                                         src={Coll6} 
-                                        alt="Indo Western Collection - Suitor Guy"
+                                        alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                                         className="w-full h-full object-cover"
                                     />
                                     
@@ -509,7 +509,7 @@ const Collection = () => {
                     >
                         <img 
                             src={Coll1} 
-                            alt="Indo Western Collection - Suitor Guy"
+                            alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -530,7 +530,7 @@ const Collection = () => {
                     >
                         <img 
                             src={Coll2} 
-                            alt="Indo Western Collection - Suitor Guy"
+                            alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -551,7 +551,7 @@ const Collection = () => {
                     >
                         <img 
                             src={Coll3} 
-                            alt="Indo Western Collection - Suitor Guy"
+                            alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -572,7 +572,7 @@ const Collection = () => {
                     >
                         <img 
                             src={Coll4} 
-                            alt="Indo Western Collection - Suitor Guy"
+                            alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
@@ -593,7 +593,7 @@ const Collection = () => {
                     >
                         <img 
                             src={Coll5} 
-                            alt="Indo Western Collection - Suitor Guy"
+                            alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -614,7 +614,7 @@ const Collection = () => {
                     >
                         <img 
                             src={Coll6} 
-                            alt="Indo Western Collection - Suitor Guy"
+                            alt="Premium Indo Western Wedding Suit Collection - Classic Style for Grooms | Suitor Guy Kerala"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>

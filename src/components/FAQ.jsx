@@ -46,6 +46,24 @@ const FAQ = () => {
 
     return (
         <div className="py-16 px-8" id="faq">
+            {/* FAQ Schema Markup */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": faqs.map(faq => ({
+                            "@type": "Question",
+                            "name": faq.question,
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": faq.answer
+                            }
+                        }))
+                    })
+                }}
+            />
             <div className="max-w-6xl mx-auto">
                 {/* Left side - Heading */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-32">
