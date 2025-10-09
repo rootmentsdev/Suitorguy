@@ -126,8 +126,8 @@ const LocationsGrid = () => {
                     <h2
                         className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px]"
                         style={{
-                            fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
-                            fontWeight: 900,
+                            fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                            fontWeight: '910',
                             letterSpacing: '0',
                             color: '#3D3D3D',
                             lineHeight: '1.05'
@@ -177,7 +177,8 @@ const LocationsGrid = () => {
                             <h2
                                 className="text-base md:text-lg font-bold uppercase mb-4"
                                 style={{
-                                    fontFamily: 'Arial Black, Arial, Helvetica, sans-serif',
+                                    fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
+                                    fontWeight: '910',
                                     color: '#000',
                                     letterSpacing: '0.3px'
                                 }}
