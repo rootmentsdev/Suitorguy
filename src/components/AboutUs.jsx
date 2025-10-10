@@ -97,7 +97,7 @@ const AboutUs = () => {
                                                 letterSpacing: '0.02em',
                                             }}
                                         >
-                                            SUITOR GUY ?
+                                            SUITOR GUY
                                         </span>
                                     </h2>
                                     
@@ -203,7 +203,7 @@ const AboutUs = () => {
                                                 letterSpacing: '0.02em',
                                             }}
                                         >
-                                            SUITOR GUY?
+                                            SUITOR GUY
                                         </span>
                                     </h2>
                                     

@@ -38,7 +38,7 @@ const Legacy = () => {
                         }}>
                             <span className="text-gray-700">WHY RENT FROM</span>
                             <br />
-                            <span className="text-[#0427B9]">SUITOR GUY?</span>
+                            <span className="text-[#0427B9]">SUITOR GUY</span>
                         </h2>
                         <div className="w-20 h-1 bg-gray-700 mb-6"></div>
                         <p style={{
@@ -84,9 +84,9 @@ const Legacy = () => {
                             letterSpacing: '1%',
                             textTransform: 'uppercase'
                         }}>
-                            <span className="text-[#0427B9]">SUITOR GUY ?</span>
+                            <span className="text-gray-700"><span  className="text-[#0427B9]">SUITOR GUY </span> SERVING YOU</span>
                             <br />
-                            <span className="text-gray-700">LOCATIONS - SERVING YOU ACROSS KERALA</span>
+                            <span className="text-gray-700">ON YOUR BIG DAY </span>
                         </h2>
                         <div className="w-20 h-1 bg-gray-700 mb-6"></div>
                         <p
