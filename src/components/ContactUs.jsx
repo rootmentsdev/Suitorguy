@@ -23,9 +23,64 @@ const ContactUs = () => {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
+    const [errors, setErrors] = useState({});
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook|hotmail|icloud|protonmail|aol|live|msn|rediffmail|zoho|yandex|mail)\.(com|co\.uk|org|net|edu|gov|in|co\.in)$/i;
+        return emailRegex.test(email);
+    };
+
+    const validatePhone = (phone) => {
+        const phoneRegex = /^[0-9]{10}$/;
+        return phoneRegex.test(phone);
+    };
+
+    const validateForm = () => {
+        const newErrors = {};
+
+        // Full Name validation
+        if (!formData.fullName.trim()) {
+            newErrors.fullName = 'Full name is required';
+        } else if (formData.fullName.trim().length < 2) {
+            newErrors.fullName = 'Full name must be at least 2 characters';
+        }
+
+        // Email validation
+        if (!formData.email.trim()) {
+            newErrors.email = 'Email is required';
+        } else if (!validateEmail(formData.email)) {
+            newErrors.email = 'Please enter a valid email (gmail, yahoo, outlook, etc.)';
+        }
+
+        // Phone validation
+        if (!formData.phone.trim()) {
+            newErrors.phone = 'Phone number is required';
+        } else if (!validatePhone(formData.phone)) {
+            newErrors.phone = 'Phone number must be exactly 10 digits';
+        }
+
+        // Message validation
+        if (!formData.message.trim()) {
+            newErrors.message = 'Message is required';
+        } else if (formData.message.trim().length < 10) {
+            newErrors.message = 'Message must be at least 10 characters';
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
+        
+        // Clear error for this field when user starts typing
+        if (errors[name]) {
+            setErrors(prev => ({
+                ...prev,
+                [name]: ''
+            }));
+        }
+
         setFormData(prev => ({
             ...prev,
             [name]: value
@@ -34,6 +89,12 @@ const ContactUs = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        // Validate form before submission
+        if (!validateForm()) {
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus(null);
 
@@ -41,14 +102,21 @@ const ContactUs = () => {
             // Google Apps Script Web App URL - Replace with your deployed URL
             const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbybYZ6Ps3TFpnKNeXOnWREXck2Jb07slS_h8CFdvPLs20Rl5qdEI52oi_jEc87O6s4wTg/exec';
             
+            // Optimized fetch with timeout and faster submission
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+            
             const response = await fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors', // Required for Google Apps Script
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify(formData),
+                signal: controller.signal
             });
+            
+            clearTimeout(timeoutId);
             
             // Since we're using no-cors mode, we can't read the response
             // But we can assume success if no error is thrown
@@ -70,7 +138,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div id="contact-us" className="w-full py-8 sm:py-12 lg:py-20 xl:py-24">
+        <div id="contact-us" className="w-full py-0 sm:py-0 lg:py-0 xl:py-0 mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
             <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
                 <motion.div
                     initial="hidden"
@@ -152,13 +220,18 @@ const ContactUs = () => {
                                             value={formData.fullName}
                                             onChange={handleInputChange}
                                             placeholder="Full Name"
-                                            required
-                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                                            className={`w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
+                                                errors.fullName ? 'focus:ring-red-500 border border-red-500' : 'focus:ring-blue-500'
+                                            }`}
                                             style={{
                                                 backgroundColor: '#333333',
-                                                fontFamily: 'Cabin, Arial, sans-serif'
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontSize: '16px'
                                             }}
                                         />
+                                        {errors.fullName && (
+                                            <p className="text-red-400 text-sm mt-1">{errors.fullName}</p>
+                                        )}
                                     </div>
 
                                     {/* Email Field */}
@@ -169,13 +242,18 @@ const ContactUs = () => {
                                             value={formData.email}
                                             onChange={handleInputChange}
                                             placeholder="Email Address"
-                                            required
-                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                                            className={`w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
+                                                errors.email ? 'focus:ring-red-500 border border-red-500' : 'focus:ring-blue-500'
+                                            }`}
                                             style={{
                                                 backgroundColor: '#333333',
-                                                fontFamily: 'Cabin, Arial, sans-serif'
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontSize: '16px'
                                             }}
                                         />
+                                        {errors.email && (
+                                            <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+                                        )}
                                     </div>
 
                                     {/* Phone Field */}
@@ -185,14 +263,20 @@ const ContactUs = () => {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            placeholder="Phone Number"
-                                            required
-                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                                            placeholder="Phone Number (10 digits)"
+                                            maxLength="10"
+                                            className={`w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
+                                                errors.phone ? 'focus:ring-red-500 border border-red-500' : 'focus:ring-blue-500'
+                                            }`}
                                             style={{
                                                 backgroundColor: '#333333',
-                                                fontFamily: 'Cabin, Arial, sans-serif'
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontSize: '16px'
                                             }}
                                         />
+                                        {errors.phone && (
+                                            <p className="text-red-400 text-sm mt-1">{errors.phone}</p>
+                                        )}
                                     </div>
 
                                     {/* Message Field */}
@@ -201,15 +285,20 @@ const ContactUs = () => {
                                             name="message"
                                             value={formData.message}
                                             onChange={handleInputChange}
-                                            placeholder="Message"
+                                            placeholder="Message (minimum 10 characters)"
                                             rows={3}
-                                            required
-                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 resize-none"
+                                            className={`w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 resize-none ${
+                                                errors.message ? 'focus:ring-red-500 border border-red-500' : 'focus:ring-blue-500'
+                                            }`}
                                             style={{
                                                 backgroundColor: '#333333',
-                                                fontFamily: 'Cabin, Arial, sans-serif'
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                fontSize: '16px'
                                             }}
                                         />
+                                        {errors.message && (
+                                            <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+                                        )}
                                     </div>
 
                                     {/* Submit Button */}
@@ -219,10 +308,12 @@ const ContactUs = () => {
                                             disabled={isSubmitting}
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="w-full py-2 px-4 rounded-lg font-bold text-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="w-full py-3 px-6 font-bold text-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                                             style={{
                                                 backgroundColor: '#0033FF',
-                                                fontFamily: 'Cabin, Arial, sans-serif'
+                                                fontFamily: 'Cabin, Arial, sans-serif',
+                                                borderRadius: '20px',
+                                                fontSize: '14px'
                                             }}
                                         >
                                             {isSubmitting ? 'Submitting...' : 'Enquire Now'}

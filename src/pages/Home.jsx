@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className='lg:mx-32'>
+            <div className='lg:mx-32 pt-20'>
                 <div className='w-full'>
                     <HomeMain />
                 </div>

@@ -74,11 +74,12 @@ const Collection = () => {
                                 onClick={() => setActiveFilter(filter)}
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className={`px-6 py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-200 ${
+                                className={`px-6 py-3 font-semibold text-sm sm:text-base transition-all duration-200 ${
                                     activeFilter === filter
                                         ? 'bg-blue-600 text-white shadow-lg'
                                         : 'bg-white text-gray-700 border border-gray-300 hover:border-gray-400'
                                 }`}
+                                style={{ borderRadius: '20px' }}
                             >
                                 {filter}
                             </motion.button>
@@ -516,7 +517,7 @@ const Collection = () => {
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
                             <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
-                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                            <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
                         </div>
@@ -537,7 +538,7 @@ const Collection = () => {
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
                             <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
-                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                            <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
                         </div>
@@ -558,7 +559,7 @@ const Collection = () => {
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
                             <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
-                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                            <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
                         </div>
@@ -579,7 +580,7 @@ const Collection = () => {
                         <div className="absolute bottom-6 right-6">
                             <h3 className="text-xl font-black text-white mb-2">3 PIECE SUIT</h3>
                             <p className="text-sm font-semibold text-white/90 mb-4">Starting from ₹4,999</p>
-                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                            <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
                         </div>
@@ -600,7 +601,7 @@ const Collection = () => {
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
                             <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
-                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                            <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
                         </div>
@@ -621,7 +622,7 @@ const Collection = () => {
                         <div className="absolute bottom-6 right-6">
                             <h3 className="text-xl font-black text-white mb-2">BANDHGALA</h3>
                             <p className="text-sm font-semibold text-white/90 mb-4">Starting from ₹4,999</p>
-                            <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+                            <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
                     </div>

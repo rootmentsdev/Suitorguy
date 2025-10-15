@@ -108,9 +108,9 @@ const Map = () => {
                         help you find the perfect suit for your special day.
                     </p>
                     <div className="flex gap-10 mt-4">
-                        <button className="bg-[#0427B9] p-2 px-3 rounded-sm BonaNova" onClick={TakeUSer}>Locate your nearest Store</button>
+                        <button className="bg-[#0427B9] p-2 px-3 BonaNova" onClick={TakeUSer} style={{ borderRadius: '20px' }}>Locate your nearest Store</button>
                         <Link to={'/Locations'}>
-                            <button className="bg-[#0427B9] p-2 px-10 rounded-sm BonaNova">View All Locations</button>
+                            <button className="bg-[#0427B9] p-2 px-10 BonaNova" style={{ borderRadius: '20px' }}>View All Locations</button>
                         </Link>
 
 

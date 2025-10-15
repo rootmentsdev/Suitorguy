@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GroupImage from "../assets/Group.png";
 
 const CTASection = () => {
+    const navigate = useNavigate();
+
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -11,6 +14,17 @@ const CTASection = () => {
             offset: 300,
         });
     }, []);
+
+    const handleContactUsClick = () => {
+        console.log('Contact Us button clicked'); // Debug log
+        
+        // Navigate to contact page since CTASection and ContactUs are on different pages
+        navigate('/contact');
+    };
+
+    const handleExploreCollectionClick = () => {
+        navigate('/collection');
+    };
 
     return (
         <div 
@@ -69,25 +83,29 @@ const CTASection = () => {
                     {/* Buttons */}
                     <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                         <button 
-                            className="bg-[#0427B9] text-white py-3 px-6 sm:px-8 rounded-lg hover:bg-blue-700 transition-colors w-full sm:w-auto text-center"
+                            onClick={handleContactUsClick}
+                            className="bg-[#0427B9] text-white py-3 px-6 sm:px-8 hover:bg-blue-700 transition-colors w-full sm:w-auto text-center"
                             style={{
                                 fontFamily: 'Cabin',
                                 fontWeight: 600,
                                 fontSize: '14px',
                                 lineHeight: '100%',
-                                letterSpacing: '0%'
+                                letterSpacing: '0%',
+                                borderRadius: '20px'
                             }}
                         >
                             Contact Us
                         </button>
                         <button 
-                            className="bg-gray-700 text-white py-3 px-6 sm:px-8 rounded-lg hover:bg-gray-600 transition-colors w-full sm:w-auto text-center"
+                            onClick={handleExploreCollectionClick}
+                            className="bg-gray-700 text-white py-3 px-6 sm:px-8 hover:bg-gray-600 transition-colors w-full sm:w-auto text-center"
                             style={{
                                 fontFamily: 'Cabin',
                                 fontWeight: 600,
                                 fontSize: '14px',
                                 lineHeight: '100%',
-                                letterSpacing: '0%'
+                                letterSpacing: '0%',
+                                borderRadius: '20px'
                             }}
                         >
                             Explore Our Collection

@@ -14,13 +14,13 @@ const Locations = () => {
     return (
         <div className="bg-[#EFEFEF] min-h-screen">
             <Header />
-            <div className='mt-[160px] md:mx-32 mx-5'>
+            <div className='mt-[80px] md:mx-32 mx-5'>
                 <LocationsGrid />
             </div>
             <div >
                 <CTASection />
             </div>
-            <div className='md:-mx-32 -mx-5'>
+            <div className='lg:-mx-32'>
                 <Footer />
             </div>
         </div>

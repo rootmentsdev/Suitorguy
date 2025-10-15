@@ -12,7 +12,7 @@ const WhyRentPage = () => {
     return (
         <div className="text-white md:mx-32 mx-5 ">
             <Header />
-            <div className='mt-[100px]'>
+            <div className='mt-[80px]'>
                 <div>
                     <WhyRent />
                 </div>

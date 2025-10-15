@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import HeroImage from '../assets/hero-image.png';
 
 const fadeInVariant = {
@@ -39,6 +40,12 @@ const slideInRight = {
 };
 
 const HomeMain = () => {
+    const navigate = useNavigate();
+
+    const handleExploreClick = () => {
+        navigate('/collection');
+    };
+
     return (
         <div className="relative min-h-0 lg:min-h-screen bg-[#EFEFEF] overflow-hidden">
 
@@ -111,7 +118,7 @@ const HomeMain = () => {
                                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                                     fontWeight: '910',
                                     letterSpacing: '0',
-                                    color: '#3D3D3D',
+                                    color: '#000000',
                                     lineHeight: '1.05',
                                 }}
                             >
@@ -143,7 +150,7 @@ const HomeMain = () => {
                                 fontWeight: 400,
                                 lineHeight: '22px',
                                 letterSpacing: '0',
-                                color: '#666666',
+                                color: '#000000',
                                 marginTop: '15px',
                                 fontSize: '14px',
 
@@ -155,15 +162,17 @@ const HomeMain = () => {
                         {/* CTA Button */}
                         <motion.div variants={fadeInVariant} className="pt-1 w-full lg:w-auto">
                             <button
-                                className="hover:bg-blue-700 transition-colors duration-300 w-full lg:w-auto"
+                                onClick={handleExploreClick}
+                                className="hover:bg-blue-700 transition-colors duration-300"
                                 style={{
                                     backgroundColor: '#0000FF',
                                     color: 'white',
                                     fontFamily: 'Cabin, Arial, sans-serif',
                                     fontWeight: 600,
-                                    fontSize: '15px',
-                                    padding: '14px 32px',
-                                    borderRadius: '50px',
+                                    fontSize: '14px',
+                                    width: '180px',
+                                    height: '48px',
+                                    borderRadius: '20px',
                                     border: 'none',
                                     cursor: 'pointer',
                                     marginBottom: '10px',

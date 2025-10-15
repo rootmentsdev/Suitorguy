@@ -75,7 +75,7 @@ const FAQ = () => {
                             letterSpacing: '1%',
                             textTransform: 'uppercase'
                         }}>
-                            <span className="text-gray-800">FREQUENTLY ASKED</span>
+                            <span className="text-black">FREQUENTLY ASKED</span>
                             <br />
                             <span className="text-[#0427B9]">QUESTIONS</span>
                         </h2>

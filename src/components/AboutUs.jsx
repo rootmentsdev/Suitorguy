@@ -80,7 +80,7 @@ const AboutUs = () => {
                                 >
                                     <h2 className="text-xl sm:text-2xl font-bold uppercase leading-tight">
                                         <span 
-                                            className="block text-gray-700"
+                                            className="block text-black"
                                             style={{
                                                 fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                                                 fontWeight: '850',
@@ -108,7 +108,7 @@ const AboutUs = () => {
                                 {/* Body Text */}
                                 <motion.div
                                     variants={fadeInVariant}
-                                    className="space-y-3 text-gray-600"
+                                    className="space-y-3 text-black"
                                     style={{
                                         fontFamily: 'Cabin, Arial, sans-serif',
                                         fontSize: '14px',
@@ -186,7 +186,7 @@ const AboutUs = () => {
                                 >
                                     <h2 className="text-3xl xl:text-4xl font-bold uppercase leading-tight">
                                         <span 
-                                            className="block text-gray-700"
+                                            className="block text-black"
                                             style={{
                                                 fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                                                 fontWeight: '850',
@@ -214,7 +214,7 @@ const AboutUs = () => {
                                 {/* Body Text */}
                                 <motion.div
                                     variants={fadeInVariant}
-                                    className="space-y-4 text-gray-600"
+                                    className="space-y-4 text-black"
                                     style={{
                                         fontFamily: 'Cabin, Arial, sans-serif',
                                         fontSize: '14px',

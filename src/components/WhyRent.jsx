@@ -113,8 +113,8 @@ const WhyRent = () => {
                     </div>
 
                     <div className="absolute bottom-32 flex w-full justify-between px-10">
-                        <button onClick={handlePrev} className="p-2 bg-gray-800 text-white rounded"> <RiArrowLeftDoubleLine className="text-2xl" /></button>
-                        <button onClick={handleNext} className="p-2 bg-gray-800 text-white rounded"><RiArrowRightDoubleLine className="text-2xl" /></button>
+                        <button onClick={handlePrev} className="p-2 bg-gray-800 text-white" style={{ borderRadius: '20px' }}> <RiArrowLeftDoubleLine className="text-2xl" /></button>
+                        <button onClick={handleNext} className="p-2 bg-gray-800 text-white" style={{ borderRadius: '20px' }}><RiArrowRightDoubleLine className="text-2xl" /></button>
                     </div>
 
 

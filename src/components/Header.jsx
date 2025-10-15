@@ -15,7 +15,7 @@ const Header = () => {
     const location = useLocation();
 
     return (
-        <header className="absolute top-0 left-0 right-0 z-50 bg-[#EFEFEF]">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-[#EFEFEF] shadow-sm">
             {/* Desktop Navigation */}
             <nav className="flex max-w-7xl mx-auto items-center justify-center lg:justify-between px-6 py-4 lg:px-12 relative">
                 {/* Logo - Centered on Mobile */}
@@ -45,7 +45,8 @@ const Header = () => {
                             to="contact-us"
                             smooth={true}
                             duration={500}
-                            className="bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors cursor-pointer"
+                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors cursor-pointer"
+                            style={{ borderRadius: '20px' }}
                             title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
                         >
                             Contact Us
@@ -61,7 +62,8 @@ const Header = () => {
                                     }
                                 }, 300);
                             }}
-                            className="bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors"
+                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors"
+                            style={{ borderRadius: '20px' }}
                             title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
                         >
                             Contact Us
@@ -125,7 +127,8 @@ const Header = () => {
                                                     smooth={true}
                                                     duration={500}
                                                     onClick={() => setMobileMenuOpen(false)}
-                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center cursor-pointer"
+                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center cursor-pointer"
+                                                    style={{ borderRadius: '20px' }}
                                                     title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
                                                 >
                                                     Contact Us
@@ -142,7 +145,8 @@ const Header = () => {
                                                             }
                                                         }, 300);
                                                     }}
-                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 rounded-md font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center"
+                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center"
+                                                    style={{ borderRadius: '20px' }}
                                                     title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
                                                 >
                                                     Contact Us
@@ -162,18 +166,22 @@ const Header = () => {
 
 // Reusable Navigation Links Component
 const NavLinks = ({ location, setMobileMenuOpen, isMobile }) => {
-    const [activeLink, setActiveLink] = useState(location.pathname);
-
     const handleClick = (path) => {
-        setActiveLink(path);
         if (isMobile) setMobileMenuOpen(false);
     };
 
-    const linkClass = (path) => `
-        font-cabin text-[14px] font-normal cursor-pointer transition-colors
-        ${isMobile ? 'block px-3 py-2 text-base text-gray-700' : 'text-gray-700 hover:text-[#0000FF]'}
-        ${activeLink === path ? 'text-[#0000FF] font-medium' : ''}
-    `;
+    const linkClass = (path) => {
+        const isActive = location.pathname === path;
+        
+        // Debug log to see what's happening
+        console.log(`Link: ${path} - Current pathname: ${location.pathname} - Is active: ${isActive}`);
+        
+        return `
+            font-cabin text-[14px] font-normal cursor-pointer transition-colors
+            ${isMobile ? 'block px-3 py-2 text-base' : ''}
+            ${isActive ? 'text-[#0000FF] font-medium' : isMobile ? 'text-gray-700' : 'text-gray-700 hover:text-[#0000FF]'}
+        `;
+    };
 
     return (
         <>

@@ -77,7 +77,7 @@ const HowitworkBody = () => {
                         fontWeight: 600,
                         fontSize: '15px',
                         padding: '14px 32px',
-                        borderRadius: '50px',
+                        borderRadius: '20px',
                         border: 'none',
                         cursor: 'pointer',
                     }}

@@ -147,6 +147,7 @@ const GetInTouch = () => {
                     <button
                         type="submit"
                         className="float-right cursor-pointer bg-white text-black py-2 px-10"
+                        style={{ borderRadius: '20px' }}
                         disabled={loading}
                     >
                         {loading ? "Sending..." : "Send Message"}

@@ -36,7 +36,7 @@ const Legacy = () => {
                           
                             
                         }}>
-                            <span className="text-gray-700">WHY RENT FROM</span>
+                            <span className="">WHY RENT FROM</span>
                             <br />
                             <span className="text-[#0427B9]">SUITOR GUY</span>
                         </h2>
@@ -51,7 +51,7 @@ const Legacy = () => {
                             textAlign: 'justify'
                         }} 
                         
-                        className="text-gray-600">
+                        className="text-black">
                             At Suitor Guy, we focus on giving you more than just a suit we offer superior quality, 
                             great value, and a tailored fit guarantee. With a wide range of styles to choose from 
                             and a seamless rental process, finding the perfect look has never been easier.
@@ -84,9 +84,9 @@ const Legacy = () => {
                             letterSpacing: '1%',
                             textTransform: 'uppercase'
                         }}>
-                            <span className="text-gray-700"><span  className="text-[#0427B9]">SUITOR GUY </span> SERVING YOU</span>
+                            <span className="text-black"><span  className="text-[#0427B9]">SUITOR GUY </span> SERVING YOU</span>
                             <br />
-                            <span className="text-gray-700">ON YOUR BIG DAY </span>
+                            <span className="text-black">ON YOUR BIG DAY </span>
                         </h2>
                         <div className="w-20 h-1 bg-gray-700 mb-6"></div>
                         <p
@@ -100,7 +100,7 @@ const Legacy = () => {
                             textAlign: 'justify'
                         }} 
                         
-                        className="text-gray-600 text-lg leading-relaxed">
+                        className="text-black text-lg leading-relaxed">
                             With 15 locations across Kerala, including our flagship showroom in Edappally, 
                             Suitor Guy is always within reach. We proudly serve Trivandrum, Thrissur, Calicut, 
                             and many more cities, making it easy to experience premium style wherever you are.

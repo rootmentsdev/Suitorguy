@@ -25,7 +25,7 @@ const OurCategories = () => {
                     letterSpacing: '1%',
                     textTransform: 'uppercase'
                 }}>
-                    <span className="text-gray-800">OUR</span>
+                    <span className="text-black">OUR</span>
                     <br />
                     <span className="text-[#0427B9]">CATEGORIES</span>
                 </h2>
@@ -57,14 +57,15 @@ const OurCategories = () => {
                             <br />
                             COLLECTION
                         </h3>
-                        <p className="text-gray-600 text-base mb-6">Starting from ₹1,499</p>
-                        <button className="w-full bg-black text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors" style={{
+                        <p className="text-black text-base mb-6">Starting from ₹499</p>
+                        <button className="w-full bg-black text-white py-3 px-6 hover:bg-gray-800 transition-colors" style={{
                             fontFamily: 'Cabin',
                             fontWeight: 600,
                             fontStyle: 'normal',
                             fontSize: '14px',
                             lineHeight: '100%',
-                            letterSpacing: '0%'
+                            letterSpacing: '0%',
+                            borderRadius: '20px'
                         }}>
                             Browse Classic
                         </button>
@@ -90,8 +91,9 @@ const OurCategories = () => {
                             <br />
                             COLLECTION
                         </h3>
-                        <p className="text-gray-600 text-base mb-6">Starting from ₹2,999</p>
-                        <button className="w-full bg-[#0427B9] text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors" style={{
+                        <p className="text-black text-base mb-6">Starting from ₹3,999</p>
+                        <button className="w-full bg-[#0427B9] text-white py-3 px-6 hover:bg-blue-700 transition-colors" style={{
+                            borderRadius: '20px',
                             fontFamily: 'Cabin',
                             fontWeight: 600,
                             fontStyle: 'normal',
@@ -123,14 +125,15 @@ const OurCategories = () => {
                             <br />
                             COLLECTION
                         </h3>
-                        <p className="text-gray-600 text-base mb-6">Starting from ₹5,999</p>
-                        <button className="w-full bg-black text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors" style={{
+                        <p className="text-black text-base mb-6">Starting from ₹2,499</p>
+                        <button className="w-full bg-black text-white py-3 px-6 hover:bg-gray-800 transition-colors" style={{
                             fontFamily: 'Cabin',
                             fontWeight: 600,
                             fontStyle: 'normal',
                             fontSize: '14px',
                             lineHeight: '100%',
-                            letterSpacing: '0%'
+                            letterSpacing: '0%',
+                            borderRadius: '20px'
                         }}>
                             Explore Premium
                         </button>

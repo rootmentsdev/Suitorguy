@@ -134,7 +134,7 @@ const LocationsGrid = () => {
                         }}
                     >
                         <span style={{ display: 'block' }}>FIND YOUR NEAREST</span>
-                        <span style={{ display: 'block', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY STORE ACROSS KERALA</span>
+                        <span style={{ display: 'block', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY STORE</span>
                     </h2>
                     
                     {/* Blue Underline */}
@@ -231,9 +231,10 @@ const LocationsGrid = () => {
                             href={location.directions_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block w-full text-center bg-[#0427B9] text-white py-3 px-6 rounded-full hover:bg-blue-700 transition-colors font-semibold text-sm mt-auto"
+                            className="block w-full text-center bg-[#0427B9] text-white py-3 px-6 hover:bg-blue-700 transition-colors font-semibold text-sm mt-auto"
                             style={{
-                                fontFamily: 'Cabin, Arial, sans-serif'
+                                fontFamily: 'Cabin, Arial, sans-serif',
+                                borderRadius: '20px'
                             }}
                         >
                             Get Direction

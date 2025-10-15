@@ -102,7 +102,7 @@ const Footer = () => {
                 </div>
 
                 {/* Information & Links Section */}
-                <div className="md:flex flex-col hidden   sm:flex-row sm:justify-center lg:flex-row gap-10 lg:gap-[100px] text-center lg:text-left">
+                <div className="hidden lg:flex flex-row gap-10 lg:gap-[100px] text-center lg:text-left">
                     <div className="">
                         <h3 className="text-lg mb-4" style={{
                             fontFamily: 'Cabin',
@@ -194,7 +194,7 @@ const Footer = () => {
                 </div>
 
                 {/* Mobile - Collapsible Sections */}
-                <div className="md:hidden flex flex-col w-full space-y-4">
+                <div className="lg:hidden flex flex-col w-full space-y-4">
                     {/* Information Dropdown */}
                     <div className="w-full border-b border-gray-700 pb-4">
                         <button 
@@ -360,7 +360,7 @@ const Footer = () => {
 
             <div className="text-center text-gray-400 text-sm md:mt-0 mt-10">
                 <p>Terms & Condition | Privacy & Policy</p>
-                <p>©2024 Suiterguy. All rights reserved</p>
+                <p>©{new Date().getFullYear()} SuitorGuy. All rights reserved</p>
             </div>
         </div>
     );
