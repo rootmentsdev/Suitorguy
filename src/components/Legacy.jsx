@@ -105,7 +105,7 @@ const Legacy = () => {
                     
                     {/* Image Section - Left */}
                     <div className="flex-1 relative w-full lg:w-auto" data-aos="fade-right">
-                        <div className="relative lg:-ml-16">
+                        <div className="relative lg:-ml-34">
                             <img
                                 src={Model2}
                                 alt="Model wearing traditional bandhgala wedding suit - Suitor Guy collection"
