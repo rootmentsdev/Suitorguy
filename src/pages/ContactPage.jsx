@@ -11,7 +11,7 @@ const ContactPage = () => {
         "contact Suitor Guy, book fitting appointment, wedding suit fitting Kerala, phone number, store locations, directions, expert fitting services"
     );
     return (
-        <div className="text-white max-w-7xl mx-auto px-6 lg:px-8 xl:px-12">
+        <div className="text-white content-container">
             <Header />
             <div className='mt-[80px]'>
                 <div>

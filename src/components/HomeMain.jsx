@@ -73,7 +73,7 @@ const HomeMain = () => {
             </div>
 
             {/* Main Content Container */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 xl:px-12 pt-20 pb-0 lg:pb-0 lg:pt-12">
+            <div className="relative z-10 w-full content-container pt-20 pb-0 lg:pb-0 lg:pt-12">
                 <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-6 lg:gap-12">
 
                     {/* Left Content - Combined Hero Image */}

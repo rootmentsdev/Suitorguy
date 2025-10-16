@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className='max-w-7xl mx-auto px-6 lg:px-8 xl:px-12 pt-20'>
+            <div className='content-container pt-20'>
                 <div className='w-full'>
                     <HomeMain />
                 </div>

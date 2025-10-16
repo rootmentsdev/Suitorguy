@@ -15,9 +15,9 @@ const OurCategories = () => {
     }, []);
 
     return (
-        <div className="py-16 px-8" id="categories">
+        <div className="py-16" id="categories">
             {/* Heading */}
-            <div className="mb-12 max-w-7xl mx-auto text-left">
+            <div className="content-container mb-12 text-left" style={{ marginLeft: '-5px' }}>
                 <h2 className="text-2xl md:text-[35px] mt-12 md:ml-[-2px]" style={{
                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                     fontWeight: '820',
@@ -33,7 +33,7 @@ const OurCategories = () => {
             </div>
 
             {/* Collection Cards */}
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-center items-end gap-12 lg:gap-24">
+            <div className="content-container flex flex-col lg:flex-row justify-center items-end gap-12 lg:gap-24" style={{ marginLeft: '-5px' }}>
                 {/* Classic Collection - Left */}
                 <div className="rounded-lg overflow-hidden w-full lg:w-80" data-aos="fade-up" data-aos-delay="100">
                     <div className="relative">
@@ -108,7 +108,7 @@ const OurCategories = () => {
 
                 {/* Premium Collection - Right */}
                 <div className="rounded-lg overflow-hidden w-full lg:w-80" data-aos="fade-up" data-aos-delay="300">
-                    <div className="relative">
+                    <div className="relative" >
                         <img
                             src={Model4}
                             alt="Premium Collection luxury wedding suits and tuxedos - Starting from ₹5,999 - Suitor Guy Kerala"

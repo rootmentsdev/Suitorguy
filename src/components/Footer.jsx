@@ -45,7 +45,7 @@ const Footer = () => {
             lineHeight: '100%',
             letterSpacing: '0%'
         }}>
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row flex-wrap justify-between text-center lg:text-left">
+            <div className="content-container flex flex-col lg:flex-row flex-wrap justify-between text-center lg:text-left">
 
                 {/* Logo and Contact Section */}
                 <div className="mb-6 tiny:mr-[40px] ml-6 lg:ml-10">
@@ -104,7 +104,7 @@ const Footer = () => {
                 </div>
 
                 {/* Information & Links Section */}
-                <div className="hidden lg:flex flex-row gap-10 lg:gap-[100px] text-center lg:text-left">
+                <div className="hidden lg:flex flex-row gap-10 lg:gap-[100px] text-center lg:text-left" style={{ marginRight: '40px' }}>
                     <div className="">
                         <h3 className="text-lg mb-4" style={{
                             fontFamily: 'Cabin',

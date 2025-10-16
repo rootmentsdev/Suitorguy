@@ -42,7 +42,7 @@ const slideInRight = {
 const AboutUs = () => {
     return (
         <div id="about-us" className="relative w-full bg-transparent py-8 sm:py-12 lg:py-20 xl:py-24 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 ">
+            <div className="content-container">
                 {/* Mobile Layout - Stacked */}
                 <div className="block lg:hidden">
                     <div className="flex flex-col items-center space-y-6">

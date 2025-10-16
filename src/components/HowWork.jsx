@@ -4,24 +4,22 @@ const HowWork = () => {
     return (
         <section 
             id="how-it-works"
-            className="bg-black mt-16 px-6 py-12 lg:px-8 xl:px-12 lg:py-[60px]" 
+            className="bg-black mt-16 py-12 lg:py-[60px] full-width-section" 
             style={{ 
-                width: '100vw', 
-                marginLeft: 'calc(-50vw + 50%)',
                 minHeight: '399px'
             }}
         >
-            <div className="text-left flex flex-col gap-6 lg:gap-8">
+            <div className="content-container text-left flex flex-col gap-6 lg:gap-8">
                 {/* Single H1 Heading - SEO Optimized */}
                 <h2 
-                    className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold md:ml-[65px]"
+                    className="uppercase mb-0 text-2xl md:text-[35px] mobile-bold"
                     style={{
                         fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                         fontWeight: '820',
                         letterSpacing: '1%',
                         color: '#FFFFFF',
                         lineHeight: '100%',
-                        marginLeft: '110px',
+                        marginLeft:"45px"
                     }}
                 >
                     THE SUITOR GUY EXPERIENCE - <span style={{ color: '#0427B9' }}>HOW IT WORKS</span>
@@ -29,13 +27,12 @@ const HowWork = () => {
                 
                 {/* Blue Underline - Matching HomeMain.jsx */}
                 <div
-                    className="md:ml-[65px]"
                     style={{
                         width: '140px',
                         height: '3px',
                         backgroundColor: '#0000FF',
                         marginTop: '15px',
-                        marginLeft: '110px',
+                         marginLeft:"45px"
                     }}
                 ></div>
 

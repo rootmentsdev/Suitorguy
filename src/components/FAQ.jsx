@@ -45,7 +45,7 @@ const FAQ = () => {
     ];
 
     return (
-        <div className="py-16 px-8" id="faq">
+        <div className="py-16" id="faq">
             {/* FAQ Schema Markup */}
             <script
                 type="application/ld+json"
@@ -64,10 +64,10 @@ const FAQ = () => {
                     })
                 }}
             />
-            <div className="max-w-7xl mx-auto">
+            <div className="content-container">
                 {/* Left side - Heading */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-32">
-                    <div className="lg:col-span-1 text-left" data-aos="fade-right">
+                    <div className="lg:col-span-1 text-left" data-aos="fade-right" style={{ marginLeft: '-5px' }}>
                         <h2 className="text-2xl md:text-[35px] md:ml-[-2px]" style={{
                             fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                             fontWeight: '820',

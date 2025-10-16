@@ -19,8 +19,8 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="flex max-w-7xl mx-auto items-center justify-center lg:justify-between px-6 py-4 lg:px-12 relative">
                 {/* Logo - Centered on Mobile */}
-                <div className="flex items-center justify-center lg:justify-start flex-1 lg:flex-initial">
-                    <RouterLink to="/" className="flex items-center" title="Suitor Guy - Premium Wedding Suit Rentals in Kerala">
+                <div className="flex items-center justify-center lg:justify-end flex-1 lg:flex-initial">
+                    <RouterLink to="/" className="flex items-center" title="Suitor Guy - Premium Wedding Suit Rentals in Kerala" style={{ marginLeft: '40px' }}>
                         <img alt="Suitor Guy Logo - Premium Wedding Suit Rentals" src={Logo} className="h-10 lg:h-11 w-auto" />
                     </RouterLink>
                 </div>

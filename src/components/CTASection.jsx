@@ -28,29 +28,17 @@ const CTASection = () => {
 
     return (
         <div 
-            className="relative w-full overflow-hidden flex flex-col md:flex-row items-stretch h-auto md:h-[550px] lg:h-[600px]" 
+            className="relative w-full overflow-hidden flex items-center justify-center h-auto md:h-[550px] lg:h-[600px] full-width-section" 
             id="cta" 
             data-aos="fade-up"
+            style={{
+                backgroundColor: '#000000',
+                marginBottom: '5px'
+            }}
         >
-            {/* Right Side - Group Image */}
+            {/* Full Width Black Section with Text Content */}
             <div 
-                className="relative order-1 md:order-2 md:flex-1 h-[350px] md:h-auto mb-0"
-                data-aos="fade-left"
-            >
-                <img 
-                    src={GroupImage} 
-                    alt="Elegant wedding suits display - Premium rental collection at Suitor Guy" 
-                    loading="lazy"
-                    className="w-full h-full object-cover object-top md:object-center"
-                />
-            </div>
-
-            {/* Left Side - Grey Box with Text Content */}
-            <div 
-                className="relative order-2 md:order-1 w-full md:flex-1 flex items-center justify-center px-4 py-8 sm:px-6 md:px-12 lg:px-20 xl:px-[100px] mt-0 md:mt-[300px] md:self-center md:h-[610px]"
-                style={{ 
-                    backgroundColor: 'rgba(33, 33, 33, 1)'
-                }}
+                className="relative w-full flex items-center justify-center px-4 py-8 sm:px-6 md:px-12 lg:px-20 xl:px-[100px]"
                 data-aos="fade-right"
             >
                 <div className="max-w-full sm:max-w-xl md:max-w-2xl">

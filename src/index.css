@@ -4,6 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Container System for Consistent Alignment */
+@layer components {
+  .content-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8 xl:px-12;
+  }
+  
+  .full-width-section {
+    @apply w-full;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+}
+
 /* Custom Typography Styles */
 @layer base {
   /* Helvetica Compressed fallback - exact match */

@@ -210,7 +210,7 @@ const ContactUs = () => {
                                 <motion.form
                                     variants={fadeInVariant}
                                     onSubmit={handleSubmit}
-                                    className="space-y-5"
+                                    className="space-y-2.5"
                                 >
                                     {/* Full Name Field */}
                                     <div>
@@ -302,7 +302,7 @@ const ContactUs = () => {
                                     </div>
 
                                     {/* Submit Button */}
-                                    <div className="pt-2">
+                                    <div className="pt-0.1">
                                         <motion.button
                                             type="submit"
                                             disabled={isSubmitting}

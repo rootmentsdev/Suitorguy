@@ -33,6 +33,7 @@ const Legacy = () => {
                             lineHeight: '100%',
                             letterSpacing: '1%',
                             textTransform: 'uppercase',
+                            marginLeft:"10px"
                           
                             
                         }}>
@@ -40,7 +41,7 @@ const Legacy = () => {
                             <br />
                             <span className="text-[#0427B9]">SUITOR GUY</span>
                         </h2>
-                        <div className="w-20 h-1 bg-gray-700 mb-6"></div>
+                        <div className="w-20 h-1 bg-gray-700 mb-6" style={{ marginLeft: '10px' }}></div>
                         <p style={{
                             fontFamily: 'Cabin',
                             fontWeight: 400,
@@ -48,7 +49,8 @@ const Legacy = () => {
                             fontSize: '14px',
                             lineHeight: '24px',
                             letterSpacing: '0%',
-                            textAlign: 'justify'
+                            textAlign: 'justify',
+                            marginLeft:"10px"
                         }} 
                         
                         className="text-black">
@@ -60,7 +62,7 @@ const Legacy = () => {
 
                     {/* Image Section - Right */}
                     <div className="flex-1 relative" data-aos="fade-left">
-                        <div className="relative">
+                        <div className="relative" style={{ marginLeft: '70px' }}>
                             <img
                                 src={Model1}
                                 alt="Groom wearing elegant premium wedding suit - Suitor Guy Kerala"
@@ -88,7 +90,7 @@ const Legacy = () => {
                             <br />
                             <span className="text-black">ON YOUR BIG DAY </span>
                         </h2>
-                        <div className="w-20 h-1 bg-gray-700 mb-6"></div>
+                        <div className="w-20 h-1 bg-gray-700 mb-6" style={{ marginLeft: '5px' }}></div>
                         <p
                         style={{
                             fontFamily: 'Cabin',
@@ -109,7 +111,7 @@ const Legacy = () => {
                     
                     {/* Image Section - Left */}
                     <div className="flex-1 relative" data-aos="fade-right">
-                        <div className="relative">
+                        <div className="relative" style={{ marginLeft: '-67px' }}>
                             <img
                                 src={Model2}
                                 alt="Model wearing traditional bandhgala wedding suit - Suitor Guy collection"
