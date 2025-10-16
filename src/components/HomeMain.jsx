@@ -89,7 +89,7 @@ const HomeMain = () => {
                             <img
                                 src={HeroImage}
                                 alt="Premium wedding suit rental in Kerala - Suitor Guy. Elegant groom suit with perfect fit for your special day"
-                                className="drop-shadow-2xl w-[380px] h-auto sm:w-[450px] lg:w-[530px] lg:h-[590px] -ml-6 sm:-ml-4 lg:-ml-8"
+                                className="drop-shadow-2xl w-[380px] h-auto sm:w-[450px] lg:w-[530px] lg:h-[590px] -ml-5 sm:-ml-5 lg:-ml-20"
                                 style={{
                                     opacity: 1,
                                 }}
@@ -102,7 +102,7 @@ const HomeMain = () => {
 
                     {/* Right Content - Text Section */}
                     <motion.div
-                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-20"
+                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-1"
                         initial="hidden"
                         animate="visible"
                         variants={slideInRight}

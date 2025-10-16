@@ -59,12 +59,6 @@ const ContactUs = () => {
             newErrors.phone = 'Phone number must be exactly 10 digits';
         }
 
-        // Message validation
-        if (!formData.message.trim()) {
-            newErrors.message = 'Message is required';
-        } else if (formData.message.trim().length < 10) {
-            newErrors.message = 'Message must be at least 10 characters';
-        }
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -285,20 +279,15 @@ const ContactUs = () => {
                                             name="message"
                                             value={formData.message}
                                             onChange={handleInputChange}
-                                            placeholder="Message (minimum 10 characters)"
+                                            placeholder="Message"
                                             rows={3}
-                                            className={`w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 resize-none ${
-                                                errors.message ? 'focus:ring-red-500 border border-red-500' : 'focus:ring-blue-500'
-                                            }`}
+                                            className="w-full px-3 py-2 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 resize-none"
                                             style={{
                                                 backgroundColor: '#333333',
                                                 fontFamily: 'Cabin, Arial, sans-serif',
                                                 fontSize: '16px'
                                             }}
                                         />
-                                        {errors.message && (
-                                            <p className="text-red-400 text-sm mt-1">{errors.message}</p>
-                                        )}
                                     </div>
 
                                     {/* Submit Button */}
