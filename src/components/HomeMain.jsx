@@ -74,7 +74,7 @@ const HomeMain = () => {
 
             {/* Main Content Container */}
             <div className="relative z-10 w-full content-container pt-20 pb-0 lg:pb-0 lg:pt-12">
-                <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-6 lg:gap-12">
+                <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-2 lg:gap-3">
 
                     {/* Left Content - Combined Hero Image */}
                     <motion.div
@@ -85,11 +85,11 @@ const HomeMain = () => {
                         style={{ flex: '0 0 auto' }}
                     >
                         {/* Combined Hero Image with mannequin and blue background */}
-                        <div className="relative z-20">
+                        <div className="relative z-20 -mt-12">
                             <img
                                 src={HeroImage}
                                 alt="Premium wedding suit rental in Kerala - Suitor Guy. Elegant groom suit with perfect fit for your special day"
-                                className="drop-shadow-2xl w-[380px] h-auto sm:w-[450px] lg:w-[530px] lg:h-[590px] -ml-5 sm:-ml-5 lg:-ml-20"
+                                className="drop-shadow-2xl w-[400px] h-auto sm:w-[480px] lg:w-[560px] lg:h-[640px] -ml-5 sm:-ml-5 lg:-ml-20"
                                 style={{
                                     opacity: 1,
                                 }}
@@ -102,7 +102,7 @@ const HomeMain = () => {
 
                     {/* Right Content - Text Section */}
                     <motion.div
-                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-1"
+                        className="flex flex-col justify-center items-start text-left space-y-2 lg:space-y-4 order-2 lg:order-2 relative z-20 w-full lg:w-auto lg:-ml-1 mt-4"
                         initial="hidden"
                         animate="visible"
                         variants={slideInRight}
@@ -112,7 +112,7 @@ const HomeMain = () => {
                         {/* Main Heading - SEO optimized with single H1 */}
                         <div className="space-y-0 w-full">
                             <motion.h1
-                                className="uppercase mb-0 text-[24px] leading-tight sm:text-[28px] md:text-[32px] lg:text-[42px]"
+                                className="uppercase mb-0 text-[24px] leading-tight sm:text-[28px] md:text-[32px] lg:text-[40px]"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
