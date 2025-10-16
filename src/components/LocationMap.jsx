@@ -13,7 +13,7 @@ const customIcon1 = L.icon({
 
 const locations = [
     { lat: 9.60976836421169, lng: 76.53303214751051, title: "Nedumgattu Chambers, Chavittuvary, S.H. Mount, P O, Kumaranalloor, Kottayam, Kerala 686006" },
-    { lat: 10.023928401303749, lng: 76.30717435359297, title: "Valiyara building Near edappaly flyover, metro piller no. 411, Edappally, Ernakulam, Kerala 682024 : Ph 8606503807" },
+    { lat: 10.023928401303749, lng: 76.30717435359297, title: "Valiyara building Near edappaly flyover, metro piller no. 411, Edappally, Ernakulam, Kerala 682024 : Ph 91 9946366655" },
     { lat: 10.116765558474144, lng: 76.47666196471887, title: "Oushady, junction, SH 1, Perumbavoor, Kerala 683542" },
     { lat: 10.53717598328902, lng: 76.19844733030988, title: "Thrissur kunamkulam Road, near Akshaya hotel, opp. Jawa, Puzhakkal, Punkunnam, Thrissur, Kerala 680002" },
     { lat: 10.766991389142559, lng: 76.65978690050873, title: "P&G tower, Stadium Bypass Rd, Sultanpet, Palakkad, Kerala 678001" },

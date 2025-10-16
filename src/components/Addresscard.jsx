@@ -7,28 +7,28 @@ const Address = [
         "store": "Suitorguy Trivandrum",
         "address": "Pankaj Tower, CTO Colony, Pappanamcode, Thiruvananthapuram, Kerala 695018",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
-        "phone": "+91 75938 38700",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/kVwvd7z1bXaspFTm9"
     },
     {
         "store": "Suitorguy Trivandrum",
         "address": "Pankaj Tower, CTO Colony, Pappanamcode, Thiruvananthapuram, Kerala 695018",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
-        "phone": "+91 75938 38700",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/kVwvd7z1bXaspFTm9"
     },
     {
         "store": "Suitorguy Trivandrum",
         "address": "Pankaj Tower, CTO Colony, Pappanamcode, Thiruvananthapuram, Kerala 695018",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
-        "phone": "+91 75938 38700",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/kVwvd7z1bXaspFTm9"
     },
     {
         "store": "Suitorguy Trivandrum",
         "address": "Pankaj Tower, CTO Colony, Pappanamcode, Thiruvananthapuram, Kerala 695018",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
-        "phone": "+91 75938 38700",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/kVwvd7z1bXaspFTm9"
     }
 ];
@@ -41,7 +41,7 @@ const locations = [
         "address": "Nedumgattu Chambers, Chavittuvary, S.H. Mount, P O, Kumaranalloor, Kottayam, Kerala 686006",
         "hours": "Mon - Sun | 10:00 am - 08:00 pm",
         "name": "ABHISHEK",
-        "phone": "7593838701",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/yW3xzTPbdYW7tHqWA"
     },
     {
@@ -50,7 +50,7 @@ const locations = [
         "address": "Valiyara building Near edappaly flyover, metro piller no. 411, Edappally, Ernakulam, Kerala 682024",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "MUHAMMED SALMAN",
-        "phone": "7593838702",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/LMahuH6wmRwBpy5W6"
 
     },
@@ -60,7 +60,7 @@ const locations = [
         "address": "Oushady, junction, SH 1, Perumbavoor, Kerala 683542",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "VISHNU",
-        "phone": "7593838703",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/KzwB9sCUfy4Wewhb9"
     },
     {
@@ -69,7 +69,7 @@ const locations = [
         "address": "Thrissur kunamkulam Road, near Akshaya hotel, opp. Jawa, Puzhakkal, Punkunnam, Thrissur, Kerala 680002",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "ANAS M.J",
-        "phone": "7593838704",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/i2qtTheJN7ybdKHT9"
     },
     {
@@ -78,7 +78,7 @@ const locations = [
         "address": "P&G tower, Stadium Bypass Rd, Sultanpet, Palakkad, Kerala 678001",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "MOHAMMED AJMAL M.S",
-        "phone": "7593838705",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/Eiaaga4VjExtKyp48"
     },
     {
@@ -87,7 +87,7 @@ const locations = [
         "address": "SH50, Ovungal, Friend Ship Nagar, Chavakkad, Kerala 680101",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "RAHUL.C RAMADAS",
-        "phone": "7593838706",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/NsJ7aKknfYYu5Rfb6"
     },
     {
@@ -96,7 +96,7 @@ const locations = [
         "address": "Edappal - Kuttippuram Rd, Edappal, Kerala 679576",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "JAFAR",
-        "phone": "7593838707",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/GxoQvzwbmy8JZZp99"
     },
     {
@@ -105,7 +105,7 @@ const locations = [
         "address": "JH2V+834, Nut Street, Vatakara, Kerala 673104",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "SRERAG C.M",
-        "phone": "7593838708",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/8XQ1n78eYjv77ZMSA"
     },
     {
@@ -114,7 +114,7 @@ const locations = [
         "address": "Gundlupet Highway, Valiyangadi, Coimbatore, Perinthalmanna, Kerala 679322",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "MUHAMMED BILAL",
-        "phone": "7593838709",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/E8433o81PSkDA6M36"
     },
     {
@@ -123,7 +123,7 @@ const locations = [
         "address": "Malappuram - Manjeri Rd, Muttipalam Upper, Manjeri, Kerala 676121",
         "hours": "Mon - Sun | 10:00 am - 08:00 pm",
         "name": "NIL",
-        "phone": "7593838710",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/uqz7cZhdAFy97B9S8"
     },
     {
@@ -132,7 +132,7 @@ const locations = [
         "address": "kottakkal, Changuvetty, Kerala 676501",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "HANUSH",
-        "phone": "7593838711",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/9uRDQTwVfeXPqRQJ7"
     },
     {
@@ -141,7 +141,7 @@ const locations = [
         "address": "BYE PASS ROAD, OPP IT PARK Near Hi- lite mall, service road, Kozhikode, Kerala 673016",
         "hours": "Mon - Sun | 10:00 am - 08:00 pm",
         "name": "ATHUL P (CLUSTER MANAGER)",
-        "phone": "7593838712",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/sssD5HfoXFZvca2K9"
     },
     {
@@ -150,7 +150,7 @@ const locations = [
         "address": "V9CW+MCW, Elayavoor, Kerala 670005",
         "hours": "Mon - Sun | 10:00 am - 08:00 pm",
         "name": "SANISH S NAIR",
-        "phone": "7593838716",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/CZHm9tiaoghmCqCp8"
     },
     {
@@ -159,7 +159,7 @@ const locations = [
         "address": "J3JQ+4JW, Civil Station, Madathumpadi, Kalpetta, Kerala 673122",
         "hours": "Mon - Sun | 10:00 am - 08:00 pm",
         "name": "MUHAMMED RASHIQUE P.R",
-        "phone": "7593838717",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/Dt75vgxQ5B8CqdHk9"
     },
     {
@@ -168,7 +168,7 @@ const locations = [
         "address": "CTO Colony, Pappanamcode Signal, Thiruvananthapuram, Kerala 69501",
         "hours": "Mon - Sun | 10:00 am - 08:30 pm",
         "name": "JOSHIL",
-        "phone": "7593838700",
+        "phone": "91 9946366655",
         "directions_link": "https://maps.app.goo.gl/ZqdgMVVZSvH4HsZ37"
     }
 ];

@@ -7,105 +7,105 @@ const locations = [
         store: "SUITOR GUY TRIVANDRUM",
         address: "CTO Colony, Pappanamcode Signal, Thiruvananthapuram, Kerala 695018",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38700",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/ZqdgMVVZSvH4HsZ37"
     },
     {
         store: "SUITORGUY KOTTAYAM",
         address: "Nedumgattu Chambers, Chavittuvary, S.H. Mount, P O, Kumaranalloor, Kottayam, Kerala 686006",
         hours: "Mon - Sun | 10:00 am - 08:00 pm",
-        phone: "+91 759 38 38701",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/yW3xzTPbdYW7tHqWA"
     },
     {
         store: "SUITOR GUY EDAPPALLY",
         address: "Valiyara building Near edappaly flyover, metro piller no. 411, Edappally, Ernakulam, Kerala 682024",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38702",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/LMahuH6wmRwBpy5W6"
     },
     {
         store: "SUITORGUY PERUMBAVOOR",
         address: "Oushady, junction, SH 1, Perumbavoor, Kerala 683542",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38703",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/KzwB9sCUfy4Wewhb9"
     },
     {
         store: "SUITOR GUY THRISSUR",
         address: "Thrissur kunamkulam Road, near Akshaya hotel, opp. Jawa, Puzhakkal, Punkunnam, Thrissur, Kerala 680002",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38704",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/i2qtTheJN7ybdKHT9"
     },
     {
         store: "SUITOR GUY PALAKKAD",
         address: "P&G tower, Stadium Bypass Rd, Sultanpet, Palakkad, Kerala 678001",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38705",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/Eiaaga4VjExtKyp48"
     },
     {
         store: "SUITORGUY CHAVAKKAD",
         address: "SH50, Ovungal, Friend Ship Nagar, Chavakkad, Kerala 680101",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38706",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/NsJ7aKknfYYu5Rfb6"
     },
     {
         store: "SUITOR GUY EDAPPAL",
         address: "Edappal - Kuttippuram Rd, Edappal, Kerala 679576",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38707",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/GxoQvzwbmy8JZZp99"
     },
     {
         store: "SUITORGUY PERINTHALMANNA",
         address: "Gundlupet Highway, Valiyangadi, Coimbatore, Perinthalmanna, Kerala 679322",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38709",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/E8433o81PSkDA6M36"
     },
     {
         store: "SUITOR GUY MANJERI",
         address: "Malappuram - Manjeri Rd, Muttipalam Upper, Manjeri, Kerala 676121",
         hours: "Mon - Sun | 10:00 am - 08:00 pm",
-        phone: "+91 759 38 38710",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/uqz7cZhdAFy97B9S8"
     },
     {
         store: "SUITOR GUY KOTTAKKAL",
         address: "kottakkal, Changuvetty, Kerala 676501",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38711",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/9uRDQTwVfeXPqRQJ7"
     },
     {
         store: "SUITORGUY KOZHIKODE",
         address: "BYE PASS ROAD, OPP IT PARK Near Hi- lite mall, service road, Kozhikode, Kerala 673016",
         hours: "Mon - Sun | 10:00 am - 08:00 pm",
-        phone: "+91 759 38 38712",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/sssD5HfoXFZvca2K9"
     },
     {
         store: "SUITOR GUY VATAKARA",
         address: "JH2V+834, Nut Street, Vatakara, Kerala 673104",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
-        phone: "+91 759 38 38708",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/8XQ1n78eYjv77ZMSA"
     },
     {
         store: "SUITOR GUY KANNUR",
         address: "V9CW+MCW, Elayavoor, Kerala 670005",
         hours: "Mon - Sun | 10:00 am - 08:00 pm",
-        phone: "+91 759 38 38716",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/CZHm9tiaoghmCqCp8"
     },
     {
         store: "SUITOR GUY KALPETTA",
         address: "J3JQ+4JW, Civil Station, Madathumpadi, Kalpetta, Kerala 673122",
         hours: "Mon - Sun | 10:00 am - 08:00 pm",
-        phone: "+91 759 38 38717",
+        phone: "91 9946366655",
         directions_link: "https://maps.app.goo.gl/Dt75vgxQ5B8CqdHk9"
     }
 ];
