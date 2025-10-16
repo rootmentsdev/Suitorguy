@@ -21,27 +21,24 @@ const Legacy = () => {
     }, []);
 
     return (
-        <div className="pt-4 pb-16 w-full" ref={legacyRef} id="legacy">
+        <div className="pt-4 pb-16 w-full content-container" ref={legacyRef} id="legacy">
             {/* Top Section - WHY RENT FROM SUITOR GUY */}
-            <div className="mb-4 ">
-                <div className="flex flex-col lg:flex-row items-center gap-12 px-8">
+            <div className="mb-8">
+                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                     {/* Text Section - Left */}
                     <div className="flex-1" data-aos="fade-right">
-                        <h2 className="mb-4 text-2xl md:text-[35px]" style={{
+                        <h2 className="mb-4 text-2xl md:text-[35px] text-left" style={{
                             fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                             fontWeight: '850',
                             lineHeight: '100%',
                             letterSpacing: '1%',
-                            textTransform: 'uppercase',
-                            marginLeft:"10px"
-                          
-                            
+                            textTransform: 'uppercase'
                         }}>
                             <span className="">WHY RENT FROM</span>
                             <br />
                             <span className="text-[#0427B9]">SUITOR GUY</span>
                         </h2>
-                        <div className="w-20 h-1 bg-gray-700 mb-6" style={{ marginLeft: '10px' }}></div>
+                        <div className="w-20 h-1 bg-gray-700 mb-6"></div>
                         <p style={{
                             fontFamily: 'Cabin',
                             fontWeight: 400,
@@ -49,37 +46,35 @@ const Legacy = () => {
                             fontSize: '14px',
                             lineHeight: '24px',
                             letterSpacing: '0%',
-                            textAlign: 'justify',
-                            marginLeft:"10px"
+                            textAlign: 'left'
                         }} 
-                        
                         className="text-black">
                             At Suitor Guy, we focus on giving you more than just a suit we offer superior quality, 
                             great value, and a tailored fit guarantee. With a wide range of styles to choose from 
                             and a seamless rental process, finding the perfect look has never been easier.
                         </p>
-            </div>
+                    </div>
 
                     {/* Image Section - Right */}
-                    <div className="flex-1 relative" data-aos="fade-left">
-                        <div className="relative" style={{ marginLeft: '70px' }}>
+                    <div className="flex-1 relative w-full lg:w-auto" data-aos="fade-left">
+                        <div className="relative lg:ml-16">
                             <img
                                 src={Model1}
                                 alt="Groom wearing elegant premium wedding suit - Suitor Guy Kerala"
                                 loading="lazy"
-                                className="w-full max-w-md mx-auto object-contain"
+                                className="w-full object-cover lg:object-contain lg:max-w-md"
                             />
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
             {/* Bottom Section - LOCATIONS */}
             <div>
-                <div className="flex flex-col lg:flex-row-reverse items-center gap-12 px-8">
+                <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-12">
                     {/* Text Section - Right */}
                     <div className="flex-1" data-aos="fade-left">
-                        <h2 className="mb-4 text-2xl md:text-[33px]" style={{
+                        <h2 className="mb-4 text-2xl md:text-[33px] text-left" style={{
                             fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
                             fontWeight: '840',
                             lineHeight: '100%',
@@ -90,7 +85,7 @@ const Legacy = () => {
                             <br />
                             <span className="text-black">ON YOUR BIG DAY </span>
                         </h2>
-                        <div className="w-20 h-1 bg-gray-700 mb-6" style={{ marginLeft: '5px' }}></div>
+                        <div className="w-20 h-1 bg-gray-700 mb-6"></div>
                         <p
                         style={{
                             fontFamily: 'Cabin',
@@ -99,10 +94,9 @@ const Legacy = () => {
                             fontSize: '14px',
                             lineHeight: '24px',
                             letterSpacing: '0%',
-                            textAlign: 'justify'
+                            textAlign: 'left'
                         }} 
-                        
-                        className="text-black text-lg leading-relaxed">
+                        className="text-black">
                             With 15 locations across Kerala, including our flagship showroom in Edappally, 
                             Suitor Guy is always within reach. We proudly serve Trivandrum, Thrissur, Calicut, 
                             and many more cities, making it easy to experience premium style wherever you are.
@@ -110,13 +104,13 @@ const Legacy = () => {
                     </div>
                     
                     {/* Image Section - Left */}
-                    <div className="flex-1 relative" data-aos="fade-right">
-                        <div className="relative" style={{ marginLeft: '-67px' }}>
+                    <div className="flex-1 relative w-full lg:w-auto" data-aos="fade-right">
+                        <div className="relative lg:-ml-16">
                             <img
                                 src={Model2}
                                 alt="Model wearing traditional bandhgala wedding suit - Suitor Guy collection"
                                 loading="lazy"
-                                className="w-full max-w-md mx-auto object-contain"
+                                className="w-full object-cover lg:object-contain lg:max-w-md"
                             />
                         </div>
                     </div>

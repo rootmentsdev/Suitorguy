@@ -112,7 +112,7 @@ const HomeMain = () => {
                         {/* Main Heading - SEO optimized with single H1 */}
                         <div className="space-y-0 w-full">
                             <motion.h1
-                                className="uppercase mb-0 text-[28px] leading-tight sm:text-[32px] lg:text-[42px]"
+                                className="uppercase mb-0 text-[24px] leading-tight sm:text-[28px] md:text-[32px] lg:text-[42px]"
                                 variants={fadeInVariant}
                                 style={{
                                     fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
@@ -122,9 +122,9 @@ const HomeMain = () => {
                                     lineHeight: '1.05',
                                 }}
                             >
-                                <span style={{ display: 'block', whiteSpace: 'nowrap' }}>PREMIUM WEDDING SUIT</span>
-                                <span style={{ display: 'block', whiteSpace: 'nowrap', lineHeight: '1.15' }}>RENTALS IN KERALA</span>
-                                <span style={{ display: 'block', whiteSpace: 'nowrap', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY</span>
+                                <span style={{ display: 'block' }}>PREMIUM WEDDING SUIT</span>
+                                <span style={{ display: 'block', lineHeight: '1.15' }}>RENTALS IN KERALA</span>
+                                <span style={{ display: 'block', color: '#0000FF', lineHeight: '1.15' }}>SUITOR GUY</span>
                             </motion.h1>
 
                             {/* Black Underline */}

@@ -7,7 +7,7 @@
 /* Global Container System for Consistent Alignment */
 @layer components {
   .content-container {
-    @apply max-w-7xl mx-auto px-6 lg:px-8 xl:px-12;
+    @apply max-w-7xl mx-auto px-4 lg:px-8 xl:px-12;
   }
   
   .full-width-section {

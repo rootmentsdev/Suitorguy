@@ -44,24 +44,24 @@ const AboutUs = () => {
         <div id="about-us" className="relative w-full bg-transparent py-8 sm:py-12 lg:py-20 xl:py-24 overflow-hidden">
             <div className="content-container">
                 {/* Mobile Layout - Stacked */}
-                <div className="block lg:hidden">
+                <div className="block lg:hidden px-0">
                     <div className="flex flex-col items-center space-y-6">
-                        {/* Image */}
-                        <motion.div
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.3 }}
-                            variants={slideInLeft}
-                            className="w-full flex justify-center"
-                        >
-                            <img
-                                src={AboutImage}
-                                alt="Professional man in elegant suit - Suitor Guy premium menswear"
-                                className="shadow-lg w-full max-w-[320px] sm:max-w-[380px] h-auto object-cover rounded-3xl"
-                                style={{ opacity: 1 }}
-                                loading="lazy"
-                            />
-                        </motion.div>
+                    {/* Image */}
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        variants={slideInLeft}
+                        className="w-full flex justify-center"
+                    >
+                        <img
+                            src={AboutImage}
+                            alt="Professional man in elegant suit - Suitor Guy premium menswear"
+                            className="shadow-lg w-full max-w-[400px] sm:max-w-[450px] h-auto object-cover rounded-3xl"
+                            style={{ opacity: 1 }}
+                            loading="lazy"
+                        />
+                    </motion.div>
 
                         {/* Text Box */}
                         <motion.div
@@ -71,7 +71,7 @@ const AboutUs = () => {
                             variants={slideInRight}
                             className="w-full flex justify-center"
                         >
-                            <div className="bg-white w-full max-w-[320px] sm:max-w-[400px] rounded-3xl flex flex-col p-6 sm:p-8" style={{ opacity: 1, gap: '20px' }}>
+                            <div className="bg-white w-full max-w-[400px] sm:max-w-[450px] rounded-3xl flex flex-col p-6 sm:p-8" style={{ opacity: 1, gap: '20px' }}>
                             
                                 {/* Heading */}
                                 <motion.div

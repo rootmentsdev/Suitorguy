@@ -133,19 +133,6 @@ const Collection = () => {
                                         >
                                             INDO <br /> WESTERN
                                         </h3>
-                                        <p 
-                                            style={{
-                                                fontFamily: 'Cabin, Arial, sans-serif',
-                                                fontWeight: 400,
-                                                fontSize: '12px',
-                                                lineHeight: '18px',
-                                                letterSpacing: '0',
-                                                color: '#666666',
-                                                marginBottom: '8px',
-                                            }}
-                                        >
-                                            Starting from ₹4,999
-                                        </p>
                                         {/* Black Underline */}
                                         <div
                                             style={{
@@ -196,19 +183,6 @@ const Collection = () => {
                                         >
                                             INDO <br /> WESTERN
                                         </h3>
-                                        <p 
-                                            style={{
-                                                fontFamily: 'Cabin, Arial, sans-serif',
-                                                fontWeight: 400,
-                                                fontSize: '11px',
-                                                lineHeight: '16px',
-                                                letterSpacing: '0',
-                                                color: '#FFFFFF',
-                                                marginBottom: '6px',
-                                            }}
-                                        >
-                                            Starting from ₹4,999
-                                        </p>
                                         {/* Black Underline */}
                                         <div
                                             style={{
@@ -262,19 +236,6 @@ const Collection = () => {
                                         >
                                             INDO <br /> WESTERN
                                         </h3>
-                                        <p 
-                                            style={{
-                                                fontFamily: 'Cabin, Arial, sans-serif',
-                                                fontWeight: 400,
-                                                fontSize: '10px',
-                                                lineHeight: '14px',
-                                                letterSpacing: '0',
-                                                color: '#FFFFFF',
-                                                marginBottom: '4px',
-                                            }}
-                                        >
-                                            Starting from ₹4,999
-                                        </p>
                                         {/* Black Underline */}
                                         <div
                                             style={{
@@ -327,21 +288,6 @@ const Collection = () => {
                                         >
                                             3<br/> PIECE SUIT
                                         </h3>
-                                        <p 
-                                            style={{
-                                                fontFamily: 'Cabin, Arial, sans-serif',
-                                                fontWeight: 400,
-                                                fontSize: '10px',
-                                                lineHeight: '14px',
-                                                letterSpacing: '0',
-                                                color: '#666666',
-                                                marginBottom: '4px',
-                                               
-                                                marginLeft:"120px"
-                                            }}
-                                        >
-                                            Starting from ₹4,999
-                                        </p>
                                         {/* Black Underline */}
                                         <div
                                             style={{
@@ -396,19 +342,6 @@ const Collection = () => {
                                         >
                                             INDO <br /> WESTERN
                                         </h3>
-                                        <p 
-                                            style={{
-                                                fontFamily: 'Cabin, Arial, sans-serif',
-                                                fontWeight: 400,
-                                                fontSize: '11px',
-                                                lineHeight: '16px',
-                                                letterSpacing: '0',
-                                                color: '#FFFFFF',
-                                                marginBottom: '6px',
-                                            }}
-                                        >
-                                            Starting from ₹4,999
-                                        </p>
                                         {/* Black Underline */}
                                         <div
                                             style={{
@@ -460,20 +393,6 @@ const Collection = () => {
                                         >
                                             BANDHGALA
                                         </h3>
-                                        <p 
-                                            style={{
-                                                fontFamily: 'Cabin, Arial, sans-serif',
-                                                fontWeight: 400,
-                                                fontSize: '14px',
-                                                lineHeight: '20px',
-                                                letterSpacing: '0',
-                                                color: '#FFFFFF',
-                                                marginBottom: '6px',
-                                                 marginLeft:"170px"
-                                            }}
-                                        >
-                                            Starting from ₹4,999
-                                        </p>
                                         {/* Black Underline */}
                                         <div
                                             style={{
@@ -516,7 +435,6 @@ const Collection = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
-                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
                             <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
@@ -537,7 +455,6 @@ const Collection = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
-                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
                             <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
@@ -558,7 +475,6 @@ const Collection = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
-                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
                             <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
@@ -579,7 +495,6 @@ const Collection = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-6 right-6">
                             <h3 className="text-xl font-black text-white mb-2">3 PIECE SUIT</h3>
-                            <p className="text-sm font-semibold text-white/90 mb-4">Starting from ₹4,999</p>
                             <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
@@ -600,7 +515,6 @@ const Collection = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                             <h3 className="text-lg font-bold text-white mb-2">INDO WESTERN</h3>
-                            <p className="text-xs text-white/90 mb-4">Starting from ₹4,999</p>
                             <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>
@@ -621,7 +535,6 @@ const Collection = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-6 right-6">
                             <h3 className="text-xl font-black text-white mb-2">BANDHGALA</h3>
-                            <p className="text-sm font-semibold text-white/90 mb-4">Starting from ₹4,999</p>
                             <button className="bg-white text-gray-900 px-6 py-2 text-sm font-semibold hover:bg-gray-100 transition-colors" style={{ borderRadius: '20px' }}>
                                 View Collection
                             </button>

@@ -17,10 +17,10 @@ const Header = () => {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-[#EFEFEF] shadow-sm">
             {/* Desktop Navigation */}
-            <nav className="flex max-w-7xl mx-auto items-center justify-center lg:justify-between px-6 py-4 lg:px-12 relative" style={{ marginRight: '110px' }}>
-                {/* Logo - Centered on Mobile */}
+            <nav className="flex max-w-7xl mx-auto items-center justify-center lg:justify-between px-6 py-4 lg:px-12 relative">
+                {/* Logo - Centered on Mobile, Right on Desktop */}
                 <div className="flex items-center justify-center lg:justify-end flex-1 lg:flex-initial">
-                    <RouterLink to="/" className="flex items-center" title="Suitor Guy - Premium Wedding Suit Rentals in Kerala" style={{ marginLeft: '40px' }}>
+                    <RouterLink to="/" className="flex items-center lg:ml-10" title="Suitor Guy - Premium Wedding Suit Rentals in Kerala">
                         <img alt="Suitor Guy Logo - Premium Wedding Suit Rentals" src={Logo} className="h-10 lg:h-11 w-auto" />
                     </RouterLink>
                 </div>
@@ -45,7 +45,7 @@ const Header = () => {
                             to="contact-us"
                             smooth={true}
                             duration={500}
-                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors cursor-pointer"
+                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors cursor-pointer mr-10"
                             style={{ borderRadius: '20px' }}
                             title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
                         >
@@ -62,7 +62,7 @@ const Header = () => {
                                     }
                                 }, 300);
                             }}
-                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors"
+                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors mr-6"
                             style={{ borderRadius: '20px' }}
                             title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
                         >
@@ -283,7 +283,7 @@ const NavLinks = ({ location, setMobileMenuOpen, isMobile }) => {
                     className={linkClass("/how-it-works")}
                     title="How Wedding Suit Rental Works - Simple Process"
                 >
-                    How it Works
+                    How it Works?
                 </ScrollLink>
             ) : (
                 <RouterLink

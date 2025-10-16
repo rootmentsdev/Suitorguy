@@ -14,7 +14,7 @@ const Locations = () => {
     return (
         <div className="bg-[#EFEFEF] min-h-screen">
             <Header />
-            <div className='mt-[80px] content-container mb-8'>
+            <div className='mt-[130px] content-container mb-8'>
                 <LocationsGrid />
             </div>
             <div>
