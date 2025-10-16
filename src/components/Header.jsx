@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-[#EFEFEF] shadow-sm">
             {/* Desktop Navigation */}
-            <nav className="flex max-w-7xl mx-auto items-center justify-center lg:justify-between px-6 py-4 lg:px-12 relative">
+            <nav className="flex max-w-7xl mx-auto items-center justify-center lg:justify-between px-6 py-4 lg:px-12 relative" style={{ marginRight: '110px' }}>
                 {/* Logo - Centered on Mobile */}
                 <div className="flex items-center justify-center lg:justify-end flex-1 lg:flex-initial">
                     <RouterLink to="/" className="flex items-center" title="Suitor Guy - Premium Wedding Suit Rentals in Kerala" style={{ marginLeft: '40px' }}>

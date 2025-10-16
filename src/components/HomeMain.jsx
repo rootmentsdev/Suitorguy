@@ -160,7 +160,7 @@ const HomeMain = () => {
                         </motion.p>
 
                         {/* CTA Button */}
-                        <motion.div variants={fadeInVariant} className="pt-1 w-full lg:w-auto">
+                        <motion.div variants={fadeInVariant} className="pt-0 w-full lg:w-auto" >
                             <button
                                 onClick={handleExploreClick}
                                 className="hover:bg-blue-700 transition-colors duration-300"
@@ -175,7 +175,7 @@ const HomeMain = () => {
                                     borderRadius: '20px',
                                     border: 'none',
                                     cursor: 'pointer',
-                                    marginBottom: '10px',
+                                    marginBottom: '12px',
                                 }}
                             >
                                 Explore Now
