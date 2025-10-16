@@ -283,7 +283,7 @@ const NavLinks = ({ location, setMobileMenuOpen, isMobile }) => {
                     className={linkClass("/how-it-works")}
                     title="How Wedding Suit Rental Works - Simple Process"
                 >
-                    How it Works?
+                    How it Works
                 </ScrollLink>
             ) : (
                 <RouterLink

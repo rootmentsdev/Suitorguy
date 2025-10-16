@@ -139,7 +139,7 @@ const ContactUs = () => {
 
     return (
         <div id="contact-us" className="w-full py-0 sm:py-0 lg:py-0 xl:py-0 mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
-            <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"

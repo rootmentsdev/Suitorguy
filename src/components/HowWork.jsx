@@ -4,7 +4,7 @@ const HowWork = () => {
     return (
         <section 
             id="how-it-works"
-            className="bg-black mt-16 px-6 py-12 lg:px-[100px] lg:py-[60px]" 
+            className="bg-black mt-16 px-6 py-12 lg:px-8 xl:px-12 lg:py-[60px]" 
             style={{ 
                 width: '100vw', 
                 marginLeft: 'calc(-50vw + 50%)',
@@ -20,7 +20,8 @@ const HowWork = () => {
                         fontWeight: '820',
                         letterSpacing: '1%',
                         color: '#FFFFFF',
-                        lineHeight: '100%'
+                        lineHeight: '100%',
+                        marginLeft: '110px',
                     }}
                 >
                     THE SUITOR GUY EXPERIENCE - <span style={{ color: '#0427B9' }}>HOW IT WORKS</span>
@@ -33,35 +34,12 @@ const HowWork = () => {
                         width: '140px',
                         height: '3px',
                         backgroundColor: '#0000FF',
-                        marginTop: '15px'
+                        marginTop: '15px',
+                        marginLeft: '110px',
                     }}
                 ></div>
 
-                {/* Subtitle - SEO optimized */}
-                <h3 
-                    className="text-xl md:text-2xl mt-4 md:ml-[65px]"
-                    style={{
-                        fontFamily: 'Helvetica Neue Condensed, Helvetica Compressed, Arial Narrow, Impact, sans-serif',
-                        fontWeight: '820',
-                        letterSpacing: '1%',
-                        color: '#FFFFFF'
-                    }}
-                >
-                    Simple 3-Step Process: Expert Fitting & Collection Starting from ₹4,999
-                </h3>
-
-                {/* Description */}
-                <p 
-                    className="text-sm md:text-base md:w-[600px] md:ml-[65px]"
-                    style={{
-                        fontFamily: 'Cabin, Arial, sans-serif',
-                        fontWeight: 400,
-                        lineHeight: '24px',
-                        color: '#CCCCCC'
-                    }}
-                >
-                    Experience our seamless wedding suit rental process across Kerala with professional fitting services. From selection to fitting to return, we handle everything with care.
-                </p>
+        
 
                 {/* Steps */}
                 <div className="flex flex-col lg:flex-row justify-start lg:justify-center items-start lg:items-center gap-6 lg:gap-[130px] mt-8">

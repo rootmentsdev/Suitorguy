@@ -64,7 +64,7 @@ const FAQ = () => {
                     })
                 }}
             />
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 {/* Left side - Heading */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-32">
                     <div className="lg:col-span-1 text-left" data-aos="fade-right">

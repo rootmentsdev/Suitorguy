@@ -11,18 +11,18 @@ const ContactPage = () => {
         "contact Suitor Guy, book fitting appointment, wedding suit fitting Kerala, phone number, store locations, directions, expert fitting services"
     );
     return (
-        <div className="text-white md:mx-32 mx-5 ">
+        <div className="text-white max-w-7xl mx-auto px-6 lg:px-8 xl:px-12">
             <Header />
             <div className='mt-[80px]'>
                 <div>
                     <Contact />
                 </div>
                 
-                <div className='-mx-5 md:-mx-32'>
+                <div>
                     <ContactUs />
                 </div>
 
-                <div className='-mx-32'>
+                <div>
                     <Footer />
                 </div>
             </div>

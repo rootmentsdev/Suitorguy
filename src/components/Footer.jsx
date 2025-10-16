@@ -36,14 +36,16 @@ const Footer = () => {
     }
 
     return (
-        <div className="w-full z-50 bg-black text-white py-10 px-6 sm:px-10 lg:px-32" style={{
+        <div className="w-full z-50 bg-black text-white py-10 px-6 sm:px-10 lg:px-8 xl:px-12" style={{
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)',
             fontFamily: 'Cabin',
             fontWeight: 400,
             fontSize: '14px',
             lineHeight: '100%',
             letterSpacing: '0%'
         }}>
-            <div className="container mx-auto flex flex-col lg:flex-row flex-wrap justify-between text-center lg:text-left">
+            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row flex-wrap justify-between text-center lg:text-left">
 
                 {/* Logo and Contact Section */}
                 <div className="mb-6 tiny:mr-[40px] ml-6 lg:ml-10">

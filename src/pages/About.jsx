@@ -10,14 +10,14 @@ const About = () => {
         "about Suitor Guy, wedding suit rental service Kerala, premium tailoring, groom services, quality guarantee, expert fitting, wedding suit rental company"
     );
     return (
-        <div className="text-white md:mx-32 mx-5 ">
+        <div className="text-white max-w-7xl mx-auto px-6 lg:px-8 xl:px-12">
             <Header />
             <div className='mt-[80px]'>
                 <div>
                     <Legacy />
                 </div>
 
-                <div className='-mx-32 md:mt-10 mt-14'>
+                <div className='md:mt-10 mt-14'>
                     <Footer />
                 </div>
             </div>

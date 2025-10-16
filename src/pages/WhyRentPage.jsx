@@ -10,14 +10,14 @@ const WhyRentPage = () => {
         "why rent wedding suits, rent vs buy suits, wedding suit rental benefits, save money, premium quality, perfect fit guarantee, hassle-free service"
     );
     return (
-        <div className="text-white md:mx-32 mx-5 ">
+        <div className="text-white max-w-7xl mx-auto px-6 lg:px-8 xl:px-12">
             <Header />
             <div className='mt-[80px]'>
                 <div>
                     <WhyRent />
                 </div>
 
-                <div className='-mx-32 md:mt-10 mt-32 '>
+                <div className='md:mt-10 mt-32'>
                     <Footer />
                 </div>
             </div>

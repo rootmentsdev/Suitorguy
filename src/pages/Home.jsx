@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className='lg:mx-32 pt-20'>
+            <div className='max-w-7xl mx-auto px-6 lg:px-8 xl:px-12 pt-20'>
                 <div className='w-full'>
                     <HomeMain />
                 </div>
@@ -22,7 +22,7 @@ const Home = () => {
                 <div className="md:mt-0 sm:mt-[-80px] tiny:mt-[20px] ">
                     <Legacy />
                 </div>
-                <div className="lg:-mx-32">
+                <div>
                     <HowWork />
                 </div>
                 <div>
@@ -31,10 +31,10 @@ const Home = () => {
                 <div>
                     <FAQ />
                 </div>
-                <div className="lg:-mx-32">
+                <div>
                     <ContactUs />
                 </div>
-                <div className="lg:-mx-32">
+                <div>
                     <Footer />
                 </div>
             </div>
