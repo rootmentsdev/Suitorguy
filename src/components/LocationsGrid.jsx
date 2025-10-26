@@ -29,7 +29,7 @@ const locations = [
         address: "M.G. Road, Opp. Metro Pillar 666, Kochi, Kerala",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
         phone: "91 9946366655",
-        directions_link: "https://maps.app.goo.gl/"
+        directions_link: "https://maps.app.goo.gl/ahEuUyg8t7zSZ6qv6"
     },
     {
         store: "SUITORGUY PERUMBAVOOR",
