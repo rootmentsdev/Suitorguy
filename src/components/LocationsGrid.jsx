@@ -25,6 +25,13 @@ const locations = [
         directions_link: "https://maps.app.goo.gl/LMahuH6wmRwBpy5W6"
     },
     {
+        store: "SUITOR GUY MG ROAD",
+        address: "M.G. Road, Opp. Metro Pillar 666, Kochi, Kerala",
+        hours: "Mon - Sun | 10:00 am - 08:30 pm",
+        phone: "91 9946366655",
+        directions_link: "https://maps.app.goo.gl/"
+    },
+    {
         store: "SUITORGUY PERUMBAVOOR",
         address: "Oushady, junction, SH 1, Perumbavoor, Kerala 683542",
         hours: "Mon - Sun | 10:00 am - 08:30 pm",
