@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Home from "./pages/Home";
-import Loader from "./components/Loader"; // Import the Loader
+import Loader from "./components/Loader";
 import './App.css'
 import HowitWorks from "./pages/HowitWorks";
 import Locations from "./pages/Locations";
@@ -12,17 +12,20 @@ import WhyRentPage from "./pages/WhyRentPage";
 import CollectionPage from "./pages/CollectionPage";
 import About from "./pages/About";
 import BreadcrumbSchema from "./components/BreadcrumbSchema";
+
 gsap.registerPlugin(ScrollToPlugin);
 
 function App() {
-  const [loading, setLoading] = useState(true); // Loader state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!loading) {
-      // Restore scroll position smoothly after the loader disappears
       const scrollPosition = sessionStorage.getItem("scrollPosition");
       if (scrollPosition) {
-        gsap.to(window, { duration: 1, scrollTo: { y: parseInt(scrollPosition, 10), autoKill: false } });
+        gsap.to(window, {
+          duration: 1,
+          scrollTo: { y: parseInt(scrollPosition, 10), autoKill: false },
+        });
       }
     }
   }, [loading]);
@@ -37,11 +40,14 @@ function App() {
 
   return (
     <div className="min-h-screen w-full overflow-hidden">
+
       {loading ? (
         <Loader setLoading={setLoading} />
       ) : (
         <>
           <BreadcrumbSchema />
+
+          {/* ALL ROUTES HERE */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/HowitWorks" element={<HowitWorks />} />
@@ -50,11 +56,18 @@ function App() {
             <Route path="/why-rent" element={<WhyRentPage />} />
             <Route path="/collection" element={<CollectionPage />} />
             <Route path="/about" element={<About />} />
-
-            
           </Routes>
+
+          {/* FLOATING CHATBOT BUTTON */}
+
+          <div onClick={() => {
+            window.zapier?.interfaces?.open();
+          }}>
+          </div>
+
         </>
       )}
+
     </div>
   );
 }
