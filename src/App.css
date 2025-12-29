@@ -118,3 +118,18 @@ img {
                      -0.3px 0.3px 0 currentColor;
     }
 }
+
+/* Header alignment with content container */
+.header-navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.25rem;
+}
+
+.header-navbar .navbar-brand {
+    padding: 0;
+}
+
+.header-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

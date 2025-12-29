@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import WhyRentPage from "./pages/WhyRentPage";
 import CollectionPage from "./pages/CollectionPage";
 import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 import BreadcrumbSchema from "./components/BreadcrumbSchema";
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -56,6 +57,7 @@ function App() {
             <Route path="/why-rent" element={<WhyRentPage />} />
             <Route path="/collection" element={<CollectionPage />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
 
           {/* FLOATING CHATBOT BUTTON */}

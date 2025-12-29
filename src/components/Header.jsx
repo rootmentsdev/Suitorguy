@@ -1,321 +1,140 @@
-import { useState } from "react";
-import { useLocation, Link as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import { useEffect, useState } from "react";
+import { scroller } from "react-scroll";
+import { useLocation, useNavigate } from "react-router-dom";
+import { Button, Nav, Navbar } from "react-bootstrap";
 import Logo from "../assets/Logo.png";
-import {
-    Dialog,
-    DialogPanel,
-    Transition,
-    TransitionChild,
-} from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const location = useLocation();
+  const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
-    return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-[#EFEFEF] shadow-sm">
-            {/* Desktop Navigation */}
-            <nav className="flex max-w-7xl mx-auto items-center justify-center lg:justify-between px-6 py-4 lg:px-12 relative">
-                {/* Logo - Centered on Mobile, Right on Desktop */}
-                <div className="flex items-center justify-center lg:justify-end flex-1 lg:flex-initial">
-                    <RouterLink to="/" className="flex items-center lg:ml-10" title="Suitor Guy - Premium Wedding Suit Rentals in Kerala">
-                        <img alt="Suitor Guy Logo - Premium Wedding Suit Rentals" src={Logo} className="h-10 lg:h-11 w-auto" />
-                    </RouterLink>
-                </div>
+  const navLinks = [
+    { label: "Home", scrollId: "home", path: "/" },
+    { label: "Why Rent?", scrollId: "legacy", path: "/why-rent" },
+    { label: "About", scrollId: "about-us", path: "/about" },
+    { label: "Collections", path: "/collection" },
+    { label: "How it Works?", scrollId: "how-it-works", path: "/how-it-works" },
+    { label: "Locations", path: "/Locations" },
+  ];
 
-                {/* Mobile Menu Button - Positioned Absolutely on Mobile */}
-                <div className="flex lg:hidden absolute right-6 top-1/2 -translate-y-1/2">
-                    <button
-                        type="button"
-                        onClick={() => setMobileMenuOpen(true)}
-                        className="inline-flex items-center justify-center rounded-md p-2.5"
-                    >
-                        <span className="sr-only">Open main menu</span>
-                        <Bars3Icon aria-hidden="true" className="h-6 w-6 text-gray-700" />
-                    </button>
-                </div>
+  useEffect(() => {
+    setExpanded(false);
+  }, [location.pathname]);
 
-                {/* Desktop Links */}
-                <div className="hidden lg:flex lg:gap-x-8 items-center">
-                    <NavLinks location={location} setMobileMenuOpen={setMobileMenuOpen} isMobile={false} />
-                    {location.pathname === "/" ? (
-                        <ScrollLink
-                            to="contact-us"
-                            smooth={true}
-                            duration={500}
-                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors cursor-pointer mr-10"
-                            style={{ borderRadius: '20px' }}
-                            title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
-                        >
-                            Contact Us
-                        </ScrollLink>
-                    ) : (
-                        <RouterLink
-                            to="/"
-                            onClick={() => {
-                                setTimeout(() => {
-                                    const contactSection = document.getElementById('contact-us');
-                                    if (contactSection) {
-                                        contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                    }
-                                }, 300);
-                            }}
-                            className="bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors mr-6"
-                            style={{ borderRadius: '20px' }}
-                            title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
-                        >
-                            Contact Us
-                        </RouterLink>
-                    )}
-                </div>
-            </nav>
+  const scrollToId = (targetId) => {
+    scroller.scrollTo(targetId, {
+      smooth: true,
+      duration: 500,
+      offset: -80,
+    });
+  };
 
-            {/* Mobile Navigation Menu */}
-            <Transition show={mobileMenuOpen}>
-                <Dialog onClose={setMobileMenuOpen} className="lg:hidden">
-                    {/* Backdrop */}
-                    <TransitionChild
-                        enter="ease-out duration-300"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
-                        leave="ease-in duration-200"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <div className="fixed inset-0 bg-black/30 z-40" />
-                    </TransitionChild>
+  const handleNavClick = (link) => {
+    if (link.scrollId) {
+      if (isHome) {
+        scrollToId(link.scrollId);
+      } else {
+        navigate("/");
+        setTimeout(() => scrollToId(link.scrollId), 320);
+      }
+    } else if (link.path) {
+      navigate(link.path);
+    }
+    setExpanded(false);
+  };
 
-                    {/* Slide-in Panel */}
-                    <TransitionChild
-                        enter="transform transition ease-in-out duration-300"
-                        enterFrom="translate-x-full"
-                        enterTo="translate-x-0"
-                        leave="transform transition ease-in-out duration-200"
-                        leaveFrom="translate-x-0"
-                        leaveTo="translate-x-full"
-                    >
-                        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                            <div className="flex items-center justify-between">
-                                {/* Mobile Logo */}
-                                <RouterLink to="/" className="flex items-center" onClick={() => setMobileMenuOpen(false)} title="Suitor Guy - Premium Wedding Suit Rentals in Kerala">
-                                    <img alt="Suitor Guy Logo - Premium Wedding Suit Rentals" src={Logo} className="h-8 w-auto" />
-                                </RouterLink>
+  const handleContactClick = () => {
+    if (isHome) {
+      scrollToId("contact-us");
+    } else {
+      navigate("/");
+      setTimeout(() => scrollToId("contact-us"), 320);
+    }
+    setExpanded(false);
+  };
 
-                                {/* Close Button */}
-                                <button
-                                    type="button"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                    className="rounded-md p-2.5 text-gray-700 hover:bg-gray-100 transition-colors"
-                                >
-                                    <span className="sr-only">Close menu</span>
-                                    <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-                                </button>
-                            </div>
+  const isActive = (link) => {
+    if (link.path && location.pathname === link.path) return true;
+    if (isHome && link.scrollId && !link.path) return true;
+    return false;
+  };
 
-                            {/* Mobile Links */}
-                            <div className="mt-6 flow-root">
-                                <div className="-my-6 divide-y divide-gray-500/10">
-                                    <div className="space-y-2 py-6">
-                                        <NavLinks location={location} setMobileMenuOpen={setMobileMenuOpen} isMobile />
-                                        {/* Contact Us Button for Mobile */}
-                                        <div className="pt-4">
-                                            {location.pathname === "/" ? (
-                                                <ScrollLink
-                                                    to="contact-us"
-                                                    smooth={true}
-                                                    duration={500}
-                                                    onClick={() => setMobileMenuOpen(false)}
-                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center cursor-pointer"
-                                                    style={{ borderRadius: '20px' }}
-                                                    title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
-                                                >
-                                                    Contact Us
-                                                </ScrollLink>
-                                            ) : (
-                                                <RouterLink
-                                                    to="/"
-                                                    onClick={() => {
-                                                        setMobileMenuOpen(false);
-                                                        setTimeout(() => {
-                                                            const contactSection = document.getElementById('contact-us');
-                                                            if (contactSection) {
-                                                                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                                            }
-                                                        }, 300);
-                                                    }}
-                                                    className="block w-full bg-[#0000FF] text-white px-6 py-2.5 font-cabin text-[14px] font-normal hover:bg-blue-700 transition-colors text-center"
-                                                    style={{ borderRadius: '20px' }}
-                                                    title="Contact Suitor Guy - Book Your Wedding Suit Fitting"
-                                                >
-                                                    Contact Us
-                                                </RouterLink>
-                                            )}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </DialogPanel>
-                    </TransitionChild>
-                </Dialog>
-            </Transition>
-        </header>
-    );
-};
+  const baseLinkStyle = {
+    fontFamily: "Cabin, Arial, sans-serif",
+    fontSize: "15px",
+    fontWeight: 500,
+    color: "#2f3a4a",
+    paddingInline: "10px",
+  };
 
-// Reusable Navigation Links Component
-const NavLinks = ({ location, setMobileMenuOpen, isMobile }) => {
-    const handleClick = (path) => {
-        if (isMobile) setMobileMenuOpen(false);
-    };
-
-    const linkClass = (path) => {
-        const isActive = location.pathname === path;
-        
-        // Debug log to see what's happening
-        console.log(`Link: ${path} - Current pathname: ${location.pathname} - Is active: ${isActive}`);
-        
-        return `
-            font-cabin text-[14px] font-normal cursor-pointer transition-colors
-            ${isMobile ? 'block px-3 py-2 text-base' : ''}
-            ${isActive ? 'text-[#0000FF] font-medium' : isMobile ? 'text-gray-700' : 'text-gray-700 hover:text-[#0000FF]'}
-        `;
-    };
-
-    return (
-        <>
-            {/* Home */}
-            {location.pathname === "/" ? (
-                <ScrollLink
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleClick("/")}
-                    className={linkClass("/")}
-                    title="Home - Premium Wedding Suit Rentals"
-                >
-                    Home
-                </ScrollLink>
-            ) : (
-                <RouterLink
-                    to="/"
-                    onClick={() => handleClick("/")}
-                    className={linkClass("/")}
-                    title="Home - Premium Wedding Suit Rentals"
-                >
-                    Home
-                </RouterLink>
-            )}
-
-            {/* Why Rent? */}
-            {location.pathname === "/" ? (
-                <ScrollLink
-                    to="legacy"
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleClick("/why-rent")}
-                    className={linkClass("/why-rent")}
-                    title="Why Rent Wedding Suits - Benefits and Savings"
-                >
-                    Why Rent?
-                </ScrollLink>
-            ) : (
-                <RouterLink
-                    to="/#legacy"
-                    onClick={() => handleClick("/why-rent")}
-                    className={linkClass("/why-rent")}
-                    title="Why Rent Wedding Suits - Benefits and Savings"
-                >
-                    Why Rent?
-                </RouterLink>
-            )}
-
-            {/* About */}
-            {location.pathname === "/" ? (
-                <ScrollLink
-                    to="about-us"
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleClick("/about")}
-                    className={linkClass("/about")}
-                    title="About Suitor Guy - Kerala's Premium Suit Rental Service"
-                >
-                    About
-                </ScrollLink>
-            ) : (
-                <RouterLink
-                    to="/"
-                    onClick={() => {
-                        handleClick("/about");
-                        // Scroll to about-us section after navigation
-                        setTimeout(() => {
-                            const aboutUsSection = document.getElementById('about-us');
-                            if (aboutUsSection) {
-                                aboutUsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            }
-                        }, 300);
-                    }}
-                    className={linkClass("/about")}
-                    title="About Suitor Guy - Kerala's Premium Suit Rental Service"
-                >
-                    About
-                </RouterLink>
-            )}
-
-            {/* Collections */}
-            <RouterLink
-                to="/collection"
-                onClick={() => handleClick("/collection")}
-                className={linkClass("/collection")}
-                title="Wedding Suit Collections in Kerala - Classic, Premium & Luxury"
+  return (
+    <Navbar
+      expand="lg"
+      fixed="top"
+      bg="light"
+      expanded={expanded}
+      className="shadow-sm px-0 header-navbar"
+      style={{ backgroundColor: "#EFEFEF", paddingInline: 0 }}
+    >
+      <div className="content-container d-flex align-items-center w-100 py-2 header-inner" style={{ marginInline: "auto" }}>
+        <Navbar.Brand
+          role="button"
+          onClick={() => handleNavClick({ path: "/" })}
+          className="d-flex align-items-center me-lg-4"
+        >
+          <img
+            src={Logo}
+            alt="Suitor Guy Logo - Premium Wedding Suit Rentals"
+            style={{ height: "46px", width: "auto" }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="main-navigation"
+          onClick={() => setExpanded((prev) => !prev)}
+          className="ms-auto"
+        />
+        <Navbar.Collapse
+          id="main-navigation"
+          className="pt-3 pt-lg-0 justify-content-center flex-lg-grow-1"
+        >
+          <Nav className="align-items-start align-items-lg-center gap-2 gap-lg-4">
+            {navLinks.map((link) => (
+              <Nav.Link
+                key={link.label}
+                active={isActive(link)}
+                onClick={() => handleNavClick(link)}
+                style={{
+                  ...baseLinkStyle,
+                  color: isActive(link) ? "#0000FF" : baseLinkStyle.color,
+                }}
+              >
+                {link.label}
+              </Nav.Link>
+            ))}
+          </Nav>
+          <div className="ms-lg-4 mt-3 mt-lg-0">
+            <Button
+              variant="primary"
+              className="px-4 py-2"
+              style={{
+                borderRadius: "20px",
+                fontFamily: "Cabin, Arial, sans-serif",
+                fontSize: "15px",
+                fontWeight: 600,
+                backgroundColor: "#0000FF",
+                borderColor: "#0000FF",
+              }}
+              onClick={handleContactClick}
             >
-                Collections
-            </RouterLink>
-
-            {/* How it Works? */}
-            {location.pathname === "/" ? (
-                <ScrollLink
-                    to="how-it-works"
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleClick("/how-it-works")}
-                    className={linkClass("/how-it-works")}
-                    title="How Wedding Suit Rental Works - Simple Process"
-                >
-                    How it Works?
-                </ScrollLink>
-            ) : (
-                <RouterLink
-                    to="/"
-                    onClick={() => {
-                        handleClick("/how-it-works");
-                        // Scroll to how-it-works section after navigation
-                        setTimeout(() => {
-                            const howItWorksSection = document.getElementById('how-it-works');
-                            if (howItWorksSection) {
-                                howItWorksSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            }
-                        }, 300);
-                    }}
-                    className={linkClass("/how-it-works")}
-                    title="How Wedding Suit Rental Works - Simple Process"
-                >
-                    How it Works?
-                </RouterLink>
-            )}
-
-            {/* Locations */}
-            <RouterLink
-                to="/Locations"
-                onClick={() => handleClick("/Locations")}
-                className={linkClass("/Locations")}
-                title="Suitor Guy Locations Across Kerala - 15+ Stores"
-            >
-                Locations
-            </RouterLink>
-        </>
-    );
+              Contact Us
+            </Button>
+          </div>
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
+  );
 };
 
 export default Header;
